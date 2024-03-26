@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Limitless_runner" beforeDir="false" />
-    </list>
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Added image because git refused to commit an empty folder" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +26,7 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/test.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/test.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -114,6 +109,7 @@
       <workItem from="1711476741555" duration="223000" />
       <workItem from="1711476981530" duration="139000" />
       <workItem from="1711477133466" duration="11000" />
+      <workItem from="1711477158243" duration="376000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -123,7 +119,39 @@
       <option name="project" value="LOCAL" />
       <updated>1711476258537</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update cuz i broke something">
+      <option name="closed" value="true" />
+      <created>1711477259306</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711477259306</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update2 cuz I broke something">
+      <option name="closed" value="true" />
+      <created>1711477358536</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711477358536</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update 3 cuz I forgor sth">
+      <option name="closed" value="true" />
+      <created>1711477383597</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711477383597</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added image because git refused to commit an empty folder">
+      <option name="closed" value="true" />
+      <created>1711477489889</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711477489889</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +166,11 @@
     <MESSAGE value="Added Sprites filder" />
     <MESSAGE value="Added Sprites folder" />
     <MESSAGE value="Added a Sprites folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a Sprites folder" />
+    <MESSAGE value="Update cuz i broke something" />
+    <MESSAGE value="Update2 cuz I broke something" />
+    <MESSAGE value="Update 3 cuz I forgor sth" />
+    <MESSAGE value="bru" />
+    <MESSAGE value="Added image because git refused to commit an empty folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added image because git refused to commit an empty folder" />
   </component>
 </project>
