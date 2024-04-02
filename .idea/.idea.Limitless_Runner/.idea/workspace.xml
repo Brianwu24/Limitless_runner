@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="">
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Added background, not working yet">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/1 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/1 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/1 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/1 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/1 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/1 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/opacity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/opacity.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +44,8 @@
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/cd/8bcee734/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Background/backgroundController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Background/opacity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/player.cs" root0="FORCE_HIGHLIGHTING" />
@@ -126,7 +137,8 @@
       <workItem from="1712001042838" duration="1771000" />
       <workItem from="1712073395393" duration="562000" />
       <workItem from="1712074000473" duration="3632000" />
-      <workItem from="1712081116954" duration="599000" />
+      <workItem from="1712081116954" duration="1282000" />
+      <workItem from="1712083950932" duration="1427000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -216,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712076416941</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added background, not working yet">
+      <option name="closed" value="true" />
+      <created>1712082405611</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712082405611</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +262,7 @@
     <MESSAGE value="Renamed to main scene" />
     <MESSAGE value="Refractored code" />
     <MESSAGE value="Added a GameController" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a GameController" />
+    <MESSAGE value="Added background, not working yet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added background, not working yet" />
   </component>
 </project>
