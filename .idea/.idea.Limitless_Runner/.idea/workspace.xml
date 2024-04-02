@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Deleted sukuna cycle">
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,13 +29,14 @@
     </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Ethan's-Branch-1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/test.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -119,7 +121,10 @@
       <workItem from="1711476981530" duration="139000" />
       <workItem from="1711477133466" duration="11000" />
       <workItem from="1711477158243" duration="376000" />
-      <workItem from="1711986169901" duration="2215000" />
+      <workItem from="1711986169901" duration="2951000" />
+      <workItem from="1712001042838" duration="1771000" />
+      <workItem from="1712073395393" duration="562000" />
+      <workItem from="1712074000473" duration="619000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -177,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711986388575</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added specialz as the music">
+      <option name="closed" value="true" />
+      <created>1711988649621</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711988649621</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +212,7 @@
     <MESSAGE value="Added image because git refused to commit an empty folder" />
     <MESSAGE value="update" />
     <MESSAGE value="Deleted sukuna cycle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted sukuna cycle" />
+    <MESSAGE value="Added specialz as the music" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added specialz as the music" />
   </component>
 </project>
