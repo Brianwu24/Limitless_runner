@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterDir="false" />
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Updated Camera">
+      <change beforePath="$PROJECT_DIR$/Assets/Background/backgroundController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/backgroundController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +132,7 @@
       <workItem from="1712074000473" duration="3632000" />
       <workItem from="1712081116954" duration="1282000" />
       <workItem from="1712083950932" duration="4911000" />
-      <workItem from="1712093595483" duration="651000" />
+      <workItem from="1712093595483" duration="1091000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -247,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712088868029</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Updated Camera">
+      <option name="closed" value="true" />
+      <created>1712094270229</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712094270229</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +283,7 @@
     <MESSAGE value="Added background, not working yet" />
     <MESSAGE value="Update to background" />
     <MESSAGE value="Made main background move. Major updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made main background move. Major updated" />
+    <MESSAGE value="Updated Camera" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Camera" />
   </component>
 </project>

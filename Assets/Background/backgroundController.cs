@@ -22,8 +22,8 @@ public class Sky
         _updateIncCloud = new Vector3(x: this._gameController.GetSpeed(), y: 0, z:0);
 
         _backgroundMain = backgroundMain;
-        // _backgroudMain = Instantiate(backgroundOver,new Vector3(0, 0, 8), Quaternion.identity, parentTransform);
-        // _clouds = Instantiate(clouds, new Vector3(0, 0, 9), Quaternion.identity, parentTransform);
+        _backgroundOver = backgroundOver;
+        _clouds = clouds;
     }
 
     private void UpdateInc()
@@ -31,13 +31,16 @@ public class Sky
         this._updateIncBack.x = this._gameController.GetSpeed() * Time.deltaTime;
         
         this._updateIncCloud.x = this._gameController.GetSpeed() * Time.deltaTime;
-        this._updateIncCloud.y = 0.5f * MathF.Sin(Time.time) * Time.deltaTime;
+        this._updateIncCloud.y = MathF.Sin(Time.time) * Time.deltaTime;
     }
 
     public void UpdateSky()
     {
         this.UpdateInc();
-        _backgroundMain.transform.position += this._updateIncBack;
+        _backgroundMain.transform.position -= this._updateIncBack;
+        _backgroundOver.transform.position -= this._updateIncBack;
+
+        _clouds.transform.position -= this._updateIncCloud;
     }
     
 }
