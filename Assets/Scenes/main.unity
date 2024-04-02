@@ -386,7 +386,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528e3796fdd413041853532de6078be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
 --- !u!4 &1149739406
 Transform:
   m_ObjectHideFlags: 0
@@ -616,11 +615,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1821847830}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 614180b7bfd9d65439a5abb657e6813f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameController: {fileID: 1149739404}
   backgroundOpac: {fileID: 2539153152483464519, guid: f6a709c20dd48f14e98bf5e5abcc8d44, type: 3}
   backgroundMain: {fileID: 4468945921421572544, guid: 45c6d92a273c5c94f8036185b7362a17, type: 3}
   clouds: {fileID: 7075628973939943404, guid: f4bbd3dc3392a0c49b52c003ab92bffc, type: 3}

@@ -5,7 +5,12 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float speed = 1;
+    private float _speed = 1;
+
+    public float GetSpeed()
+    {
+        return this._speed;
+    }
     
     void Start()
     {
