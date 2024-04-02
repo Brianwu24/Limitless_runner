@@ -10,11 +10,11 @@ public class Player : MonoBehaviour
     public Vector2 velocity;            // Vector2 is the X & Y positions
     public float jumpVelocity = 20;
     public float groundHeight = 10;
-    public bool grounded = false;
+    public bool grounded;
 
-    public bool holdJump = false;
+    public bool holdJump;
     public float maxHoldJumpTime = 0.4f;
-    public float jumpTimer = 0.0f;
+    public float jumpTimer;
 
     public float jumpGrounddistance = 1; // so people can jump just before hitting the ground so it isn't clunky
 
@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
         if (!grounded)
         {
 
-            position.y += velocity.y * Time.fixedDeltaTime; // changing the player position eveyr frame
+            position.y += velocity.y * Time.fixedDeltaTime; // changing the player position every frame
             if (!holdJump)
             {
                 velocity.y += gravity * Time.fixedDeltaTime; // changing how much the y axis changes per frame
