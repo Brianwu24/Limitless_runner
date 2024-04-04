@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Deleted buildings in unity (not the prefabs)" />
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +129,7 @@
       <workItem from="1712174018489" duration="83000" />
       <workItem from="1712174116507" duration="4439000" />
       <workItem from="1712178898766" duration="1968000" />
-      <workItem from="1712189168474" duration="10728000" />
+      <workItem from="1712189168474" duration="11793000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -321,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712199622295</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Unity workspace update">
+      <option name="closed" value="true" />
+      <created>1712200412943</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1712200412943</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +353,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added a Sprites folder" />
     <MESSAGE value="Update cuz i broke something" />
     <MESSAGE value="Update2 cuz I broke something" />
     <MESSAGE value="Update 3 cuz I forgor sth" />
@@ -368,6 +377,7 @@
     <MESSAGE value="Init Commit because I screwed something up" />
     <MESSAGE value="Finished sky and buildings, fixed bugs" />
     <MESSAGE value="Deleted buildings in unity (not the prefabs)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted buildings in unity (not the prefabs)" />
+    <MESSAGE value="Unity workspace update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unity workspace update" />
   </component>
 </project>
