@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Background/BackgroundController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BackgroundController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingSprites/1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingSprites/1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingSprites/3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingSprites/3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingSprites/5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingSprites/5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterDir="false" />
-    </list>
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Finished sky and buildings, fixed bugs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +24,7 @@
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/cd/8bcee734/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Background/BackgroundController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Background/BuildingSprites/1.png.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Background/opacity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/player.cs" root0="FORCE_HIGHLIGHTING" />
@@ -136,7 +126,7 @@
       <workItem from="1712174018489" duration="83000" />
       <workItem from="1712174116507" duration="4439000" />
       <workItem from="1712178898766" duration="1968000" />
-      <workItem from="1712189168474" duration="9988000" />
+      <workItem from="1712189168474" duration="10375000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -314,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712174145951</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Finished sky and buildings, fixed bugs">
+      <option name="closed" value="true" />
+      <created>1712199423832</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1712199423832</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,7 +334,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added Sprites filder" />
     <MESSAGE value="Added Sprites folder" />
     <MESSAGE value="Added a Sprites folder" />
     <MESSAGE value="Update cuz i broke something" />
@@ -361,6 +358,7 @@
     <MESSAGE value="Added building sprites" />
     <MESSAGE value="fix" />
     <MESSAGE value="Init Commit because I screwed something up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init Commit because I screwed something up" />
+    <MESSAGE value="Finished sky and buildings, fixed bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished sky and buildings, fixed bugs" />
   </component>
 </project>
