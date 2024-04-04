@@ -173,7 +173,6 @@ public class Buildings
                 this.y - _rng.NextFloat(0f, 0.15f), this.z); 
             GameObject newBuilding = GameObject.Instantiate(chosenNewBuilding, newPos, Quaternion.identity, this._parentTransform);
             _buildings.Add(newBuilding);
-            destroyLastBuilding = false;
         }
     }
 }
@@ -235,7 +234,7 @@ public class BackgroundController : MonoBehaviour
         instantiatedBuildings.Add(new Buildings(0.8f, 6, 0.35f, _gameController, parentTransform, buildingPrefab2.transform));
         instantiatedBuildings.Add(new Buildings(0.7f, 5, 0.45f, _gameController, parentTransform, buildingPrefab3.transform));
         instantiatedBuildings.Add(new Buildings(0.675f, 4, 0.55f, _gameController, parentTransform, buildingPrefab4.transform));
-        instantiatedBuildings.Add(new Buildings(0.1f, 3, 0.75f, _gameController, parentTransform, buildingPrefab5.transform));
+        instantiatedBuildings.Add(new Buildings(0.5f, 3, 0.75f, _gameController, parentTransform, buildingPrefab5.transform));
         
     }
 

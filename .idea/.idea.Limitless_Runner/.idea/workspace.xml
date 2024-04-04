@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="" />
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Final Update for fix">
+      <change beforePath="$PROJECT_DIR$/Assets/Background/BackgroundController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BackgroundController.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -303,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712174145951</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Final Update for fix">
+      <option name="closed" value="true" />
+      <created>1712251636412</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1712251636412</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +335,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added Sprites filder" />
     <MESSAGE value="Added Sprites folder" />
     <MESSAGE value="Added a Sprites folder" />
     <MESSAGE value="Update cuz i broke something" />
@@ -350,6 +359,7 @@
     <MESSAGE value="Added building sprites" />
     <MESSAGE value="fix" />
     <MESSAGE value="Init Commit because I screwed something up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init Commit because I screwed something up" />
+    <MESSAGE value="Final Update for fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Update for fix" />
   </component>
 </project>
