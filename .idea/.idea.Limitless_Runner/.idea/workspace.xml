@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="" />
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/BackgroundController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BackgroundController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings4.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingSprites/1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingSprites/1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingSprites/3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingSprites/3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingSprites/5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingSprites/5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,18 +31,12 @@
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/a2/a4a722fb/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/cd/8bcee734/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Background/BackgroundController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Background/backgroundController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Background/backgroundController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Background/backgroundController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Background/backgroundController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Background/background_main.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Background/opacity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/random.cs" root0="SKIP_HIGHLIGHTING" />
@@ -46,26 +51,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\TryHarder\\AppData\\Local\\JetBrains\\Shared\\vAny\\DecompilerCache",
-      "C:\\Users\\TryHarder\\AppData\\Local\\JetBrains\\Shared\\vAny\\SourcesCache",
-      "C:\\Users\\TryHarder\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\TryHarder\\AppData\\Local\\JetBrains\\Shared\\vAny\\DecompilerCache&quot;,
+      &quot;C:\\Users\\TryHarder\\AppData\\Local\\JetBrains\\Shared\\vAny\\SourcesCache&quot;,
+      &quot;C:\\Users\\TryHarder\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Unity.exe" />
@@ -128,6 +134,9 @@
       <workItem from="1712165498033" duration="3724000" />
       <workItem from="1712173591481" duration="410000" />
       <workItem from="1712174018489" duration="83000" />
+      <workItem from="1712174116507" duration="4439000" />
+      <workItem from="1712178898766" duration="1968000" />
+      <workItem from="1712189168474" duration="9988000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -297,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712113285930</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Init Commit because I screwed something up">
+      <option name="closed" value="true" />
+      <created>1712174145950</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1712174145951</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +336,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Init commit" />
     <MESSAGE value="Added Sprites filder" />
     <MESSAGE value="Added Sprites folder" />
     <MESSAGE value="Added a Sprites folder" />
@@ -344,6 +360,7 @@
     <MESSAGE value="Fixed error" />
     <MESSAGE value="Added building sprites" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="Init Commit because I screwed something up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init Commit because I screwed something up" />
   </component>
 </project>
