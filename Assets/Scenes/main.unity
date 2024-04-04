@@ -705,9 +705,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 1149739404}
-  backgroundOpac: {fileID: 7932433401207073495, guid: f6a709c20dd48f14e98bf5e5abcc8d44, type: 3}
-  backgroundMain: {fileID: 4840299103010318043, guid: 45c6d92a273c5c94f8036185b7362a17, type: 3}
-  cloud: {fileID: 6700700460544623572, guid: f4bbd3dc3392a0c49b52c003ab92bffc, type: 3}
+  backgroundOpac: {fileID: 7932433401207073495, guid: 2c8e6eb1820fd1c4192fca6ca796e9fb, type: 3}
+  backgroundMain: {fileID: 4840299103010318043, guid: 3b79e9c2bcce9584b846f7911da920fa, type: 3}
+  cloud: {fileID: 6700700460544623572, guid: ba0068b3c00f02141a997abb36ef836e, type: 3}
   buildingPrefab1: {fileID: 3178734942394723830, guid: e35fa220c4e133d4aafd6329386e642d, type: 3}
   buildingPrefab2: {fileID: 1411898133409027287, guid: 5e4ed2f48673ecf4fb189009abd23b0e, type: 3}
   buildingPrefab3: {fileID: 1698691463845892595, guid: 4868b32d65fe77944b415714bde3a2c2, type: 3}
