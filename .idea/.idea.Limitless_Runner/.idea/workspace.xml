@@ -4,29 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Deleted buildings in unity (not the prefabs)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <excluded-from-favorite>
-      <branch-storage>
-        <map>
-          <entry type="REMOTE">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="origin/main" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="Ethan's-Branch-1" />
@@ -36,8 +20,17 @@
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/a2/a4a722fb/Random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/cd/8bcee734/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Background/BackgroundController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Background/BuildingSprites/1.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Background/opacity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GameController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/random.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -59,7 +52,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -124,7 +117,17 @@
       <workItem from="1711986169901" duration="2951000" />
       <workItem from="1712001042838" duration="1771000" />
       <workItem from="1712073395393" duration="562000" />
-      <workItem from="1712074000473" duration="619000" />
+      <workItem from="1712074000473" duration="3632000" />
+      <workItem from="1712081116954" duration="1282000" />
+      <workItem from="1712083950932" duration="4911000" />
+      <workItem from="1712093595483" duration="17677000" />
+      <workItem from="1712160945797" duration="2894000" />
+      <workItem from="1712165498033" duration="3724000" />
+      <workItem from="1712173591481" duration="410000" />
+      <workItem from="1712174018489" duration="83000" />
+      <workItem from="1712174116507" duration="4439000" />
+      <workItem from="1712178898766" duration="1968000" />
+      <workItem from="1712189168474" duration="10728000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -190,7 +193,135 @@
       <option name="project" value="LOCAL" />
       <updated>1711988649621</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Renamed to main scene">
+      <option name="closed" value="true" />
+      <created>1712074657731</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712074657731</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Refractored code">
+      <option name="closed" value="true" />
+      <created>1712075682249</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712075682249</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added a GameController">
+      <option name="closed" value="true" />
+      <created>1712076416941</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712076416941</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added background, not working yet">
+      <option name="closed" value="true" />
+      <created>1712082405611</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712082405611</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Update to background">
+      <option name="closed" value="true" />
+      <created>1712085544742</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1712085544742</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Made main background move. Major updated">
+      <option name="closed" value="true" />
+      <created>1712088868029</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1712088868029</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Updated Camera">
+      <option name="closed" value="true" />
+      <created>1712094270229</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712094270229</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Updated background, and fixed character not in camera">
+      <option name="closed" value="true" />
+      <created>1712094765934</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1712094765934</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Made Sky background">
+      <option name="closed" value="true" />
+      <created>1712110006143</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1712110006143</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Changed class name to fit convention">
+      <option name="closed" value="true" />
+      <created>1712110112618</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1712110112618</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fixed error">
+      <option name="closed" value="true" />
+      <created>1712110266009</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1712110266009</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added building sprites">
+      <option name="closed" value="true" />
+      <created>1712112533645</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1712112533645</updated>
+    </task>
+    <task id="LOCAL-00021" summary="fix">
+      <option name="closed" value="true" />
+      <created>1712113285930</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1712113285930</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Init Commit because I screwed something up">
+      <option name="closed" value="true" />
+      <created>1712174145950</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1712174145951</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Finished sky and buildings, fixed bugs">
+      <option name="closed" value="true" />
+      <created>1712199423832</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1712199423832</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Deleted buildings in unity (not the prefabs)">
+      <option name="closed" value="true" />
+      <created>1712199622295</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1712199622295</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,11 +330,19 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Init commit" />
-    <MESSAGE value="Added Sprites filder" />
-    <MESSAGE value="Added Sprites folder" />
     <MESSAGE value="Added a Sprites folder" />
     <MESSAGE value="Update cuz i broke something" />
     <MESSAGE value="Update2 cuz I broke something" />
@@ -213,6 +352,22 @@
     <MESSAGE value="update" />
     <MESSAGE value="Deleted sukuna cycle" />
     <MESSAGE value="Added specialz as the music" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added specialz as the music" />
+    <MESSAGE value="Renamed to main scene" />
+    <MESSAGE value="Refractored code" />
+    <MESSAGE value="Added a GameController" />
+    <MESSAGE value="Added background, not working yet" />
+    <MESSAGE value="Update to background" />
+    <MESSAGE value="Made main background move. Major updated" />
+    <MESSAGE value="Updated Camera" />
+    <MESSAGE value="Updated background, and fixed character not in camera" />
+    <MESSAGE value="Made Sky background" />
+    <MESSAGE value="Changed class name to fit convention" />
+    <MESSAGE value="Fixed error" />
+    <MESSAGE value="Added building sprites" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="Init Commit because I screwed something up" />
+    <MESSAGE value="Finished sky and buildings, fixed bugs" />
+    <MESSAGE value="Deleted buildings in unity (not the prefabs)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted buildings in unity (not the prefabs)" />
   </component>
 </project>
