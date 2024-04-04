@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Background/BackgroundController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BackgroundController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingPrefabs/Buildings4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingSprites/1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingSprites/1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingSprites/3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingSprites/3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Background/BuildingSprites/5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BuildingSprites/5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterDir="false" />
-    </list>
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
