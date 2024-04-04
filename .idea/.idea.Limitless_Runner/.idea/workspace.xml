@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Finished sky and buildings, fixed bugs" />
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Deleted buildings in unity (not the prefabs)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +27,7 @@
     <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Background/BuildingSprites/1.png.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Background/opacity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/random.cs" root0="SKIP_HIGHLIGHTING" />
@@ -126,7 +127,7 @@
       <workItem from="1712174018489" duration="83000" />
       <workItem from="1712174116507" duration="4439000" />
       <workItem from="1712178898766" duration="1968000" />
-      <workItem from="1712189168474" duration="10375000" />
+      <workItem from="1712189168474" duration="10728000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -312,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712199423832</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Deleted buildings in unity (not the prefabs)">
+      <option name="closed" value="true" />
+      <created>1712199622295</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1712199622295</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +343,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added Sprites folder" />
     <MESSAGE value="Added a Sprites folder" />
     <MESSAGE value="Update cuz i broke something" />
     <MESSAGE value="Update2 cuz I broke something" />
@@ -359,6 +367,7 @@
     <MESSAGE value="fix" />
     <MESSAGE value="Init Commit because I screwed something up" />
     <MESSAGE value="Finished sky and buildings, fixed bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished sky and buildings, fixed bugs" />
+    <MESSAGE value="Deleted buildings in unity (not the prefabs)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted buildings in unity (not the prefabs)" />
   </component>
 </project>
