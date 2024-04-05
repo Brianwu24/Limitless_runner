@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,19 +11,37 @@ public class Player : MonoBehaviour
     public Vector2 velocity;            // Vector2 is the X & Y positions
     public float jumpVelocity = 20;
     public float groundHeight = 10;
-    public bool grounded = false;
+    public bool grounded;
 
-    public bool holdJump = false;
+    public bool holdJump;
     public float maxHoldJumpTime = 0.4f;
-    public float jumpTimer = 0.0f;
+    public float jumpTimer;
 
     public float jumpGrounddistance = 1; // so people can jump just before hitting the ground so it isn't clunky
 
+    
+    //Brian's code starts here
+    public GameObject powerManager;
+    private PowerUpManger _powerManager;
 
+    private Collider _playerCollider;
     void Start()
     {
+        _powerManager = powerManager.GetComponent<PowerUpManger>();
+        _playerCollider = GetComponent<Collider>();
+    }
+    
+    private void GetPowerUp()
+    {
+        //O(1) time complexity check
+        GameObject nearestPowerUp = _powerManager.GetClosestPowerUp();
+        // if (nearestPowerUp.Item2.tag)
+        // Debug.Log(nearestPowerUp.GetComponent<().tag);
+
 
     }
+    // Ends here
+    
     // Update is called once per frame
     void Update()
     {
@@ -44,6 +63,9 @@ public class Player : MonoBehaviour
         {
             holdJump = false;
         }
+        
+        //Check for PowerUpCollision
+        GetPowerUp();
 
 
 
@@ -56,7 +78,7 @@ public class Player : MonoBehaviour
         if (!grounded)
         {
 
-            position.y += velocity.y * Time.fixedDeltaTime; // changing the player position eveyr frame
+            position.y += velocity.y * Time.fixedDeltaTime; // changing the player position every frame
             if (!holdJump)
             {
                 velocity.y += gravity * Time.fixedDeltaTime; // changing how much the y axis changes per frame
