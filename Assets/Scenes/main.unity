@@ -609,7 +609,7 @@ MonoBehaviour:
   maxHoldJumpTime: 0.2
   jumpTimer: 0
   jumpGrounddistance: 1
-  powerUpManager: {fileID: 1480699745}
+  powerManager: {fileID: 1480699745}
 --- !u!212 &1428392251
 SpriteRenderer:
   m_ObjectHideFlags: 0
