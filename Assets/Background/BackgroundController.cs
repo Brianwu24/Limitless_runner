@@ -129,7 +129,7 @@ public class Buildings
     {
         if (speedMul <= 0)
         {
-            throw new Exception($"Can make speed multplier less than 0");
+            throw new Exception($"Can make speed multiplier less than 0");
         }
         this.speedMul = newSpeedMul;
     }

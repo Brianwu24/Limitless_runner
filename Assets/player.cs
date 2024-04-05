@@ -18,11 +18,21 @@ public class Player : MonoBehaviour
 
     public float jumpGrounddistance = 1; // so people can jump just before hitting the ground so it isn't clunky
 
-
+    //Brian's code starts here
+    public GameObject powerUpManager;
+    private Component _powerUpManager;
     void Start()
     {
-
+        _powerUpManager = powerUpManager.GetComponent<PowerUpManger>();
     }
+    
+    private void GetPowerUp()
+    {
+        //O(1) time complexity check
+        // GameObject closestPowerUp = _powerUpManager.GetPower
+    }
+    // Ends here
+    
     // Update is called once per frame
     void Update()
     {

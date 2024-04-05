@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/BackgroundController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BackgroundController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +33,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Background/opacity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PowerUps/PowerUpManger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/random.cs" root0="SKIP_HIGHLIGHTING" />
@@ -129,7 +134,9 @@
       <workItem from="1712174116507" duration="4439000" />
       <workItem from="1712178898766" duration="1968000" />
       <workItem from="1712189168474" duration="9988000" />
-      <workItem from="1712280234347" duration="1816000" />
+      <workItem from="1712280234347" duration="2467000" />
+      <workItem from="1712350781636" duration="1146000" />
+      <workItem from="1712354758780" duration="648000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -323,7 +330,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712251926903</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added base powerup class">
+      <option name="closed" value="true" />
+      <created>1712282847712</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1712282847712</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +360,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added a Sprites folder" />
     <MESSAGE value="Update cuz i broke something" />
     <MESSAGE value="Update2 cuz I broke something" />
     <MESSAGE value="Update 3 cuz I forgor sth" />
@@ -370,6 +384,7 @@
     <MESSAGE value="Init Commit because I screwed something up" />
     <MESSAGE value="Final Update for fix" />
     <MESSAGE value="Made sure that BackgroundController.cs is here" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made sure that BackgroundController.cs is here" />
+    <MESSAGE value="Added base powerup class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added base powerup class" />
   </component>
 </project>
