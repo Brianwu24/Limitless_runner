@@ -107,7 +107,7 @@ public class Buildings
         _refBuildingCount = this._buildings.Count;
         float prevPosition = -8.9f;
 
-        while (true)
+        while (prevPosition >= 20)
         {
             int randomNum = this._rng.NextInt(0, this._refBuildingCount);
             GameObject chosenBuilding = _buildings[randomNum];
@@ -118,10 +118,6 @@ public class Buildings
 
 
             prevPosition += xSize;
-            if (prevPosition >= 20)
-            {
-                break;
-            }
         }
     }
 
