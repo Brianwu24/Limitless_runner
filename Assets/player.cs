@@ -7,9 +7,10 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
+    public GameObject gameController;
+    private GameController _gameController;
 
-    public float gravity;
-    
+    private float _gravity;
     public float velocityY;         
 
     public bool grounded;
@@ -21,7 +22,7 @@ public class Player : MonoBehaviour
 
     public float jumpGrounddistance = 1; // so people can jump just before hitting the ground so it isn't clunky
 
-    
+    private bool isDead = false;
     //Brian's code starts here
     public GameObject powerManager;
     private PowerUpManger _powerManager;
@@ -29,8 +30,10 @@ public class Player : MonoBehaviour
     // private BoxCollider2D _playerCollider;
     void Start()
     {
+        _gameController = gameController.GetComponent<GameController>();
         _powerManager = powerManager.GetComponent<PowerUpManger>();
-        // _playerCollider = GetComponent<Collider>();
+
+        _gravity = _gameController.gravity;
     }
     public void OnCollisionEnter2D(Collision2D other)
     {
@@ -38,9 +41,13 @@ public class Player : MonoBehaviour
         {
             grounded = true;
         }
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            isDead = true;
+        }
     }
 
-    public void OnCollisionStay(Collision other)
+    public void OnCollisionStay2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Platform"))
         {
@@ -49,7 +56,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void OnCollisionExit(Collision other)
+    public void OnCollisionExit2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Platform"))
         {
@@ -70,11 +77,18 @@ public class Player : MonoBehaviour
     //
     // }
     // Ends here
+    public bool GetJumping()
+    {
+        return !grounded;
+    }
     
     // Update is called once per frame
     void Update()
     {
-
+        if (isDead)
+        {
+            _gameController.SetSpeed(0);
+        }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (grounded)
@@ -96,10 +110,8 @@ public class Player : MonoBehaviour
             {
                 jumpHoldTimer = 3;
             }
-            velocityY = 5 + jumpHoldTimer;
+            velocityY = 10f + 5f * jumpHoldTimer;
             transform.Translate(Vector3.up * 0.1f);
-            grounded = false;
-            inAir = true;
         }
 
         if (grounded && inAir)
@@ -126,7 +138,12 @@ public class Player : MonoBehaviour
         // {
         if (inAir)
         {
-            transform.Translate(Vector3.up * ((Time.deltaTime * velocityY) + (0.75f * gravity * MathF.Pow(Time.deltaTime , 2))));
+            float translationY = 
+                (Time.deltaTime * velocityY) + (_gravity * MathF.Pow(Time.deltaTime, 2));
+            
+            transform.position += new Vector3(0, translationY, 0);
+
+
         }
             
         // }

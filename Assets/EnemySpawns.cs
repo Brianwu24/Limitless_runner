@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Loading;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -11,20 +12,21 @@ public class GameManager : MonoBehaviour
 
     private List<GameObject> _enemies;
 
+    public int count;
     private void Start()
     {
         _enemies = new List<GameObject>();
+        count = 0;
     }
 
     private void Update()
     {
         // Check if it's time to spawn a new enemy
-        if (Time.time - lastSpawnTime > UnityEngine.Random.Range(0, 2f))
+        if (Time.time - lastSpawnTime > 3)
         {
             SpawnEnemy();
             lastSpawnTime = Time.time;
         }
-
 
         for (int i = _enemies.Count - 1; i >= 0; i--)
         {

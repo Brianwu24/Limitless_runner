@@ -325,8 +325,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2719972457213105968}
-  - component: {fileID: 8683608764373597721}
-  - component: {fileID: 3350048297520113965}
+  - component: {fileID: -235443633195256544}
+  - component: {fileID: 4888676610701940314}
   m_Layer: 0
   m_Name: Platforms
   m_TagString: Platform
@@ -351,7 +351,7 @@ Transform:
   - {fileID: 6946592737301297086}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &8683608764373597721
+--- !u!50 &-235443633195256544
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -378,7 +378,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &3350048297520113965
+--- !u!61 &4888676610701940314
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

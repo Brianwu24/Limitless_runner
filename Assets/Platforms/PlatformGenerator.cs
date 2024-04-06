@@ -55,8 +55,8 @@ public class Platforms
             GameObject chosenPlatform = _refPlatforms[randomNum];
             float xSize = chosenPlatform.GetComponent<Renderer>().bounds.size.x / 2f;
             prevPosition += xSize; // 
-            GameObject newPlatform = GameObject.Instantiate(chosenPlatform, new Vector3(prevPosition + this._rng.NextFloat(0, 2f), 
-                this._y + _rng.NextFloat(-1f, 0.5f), this._z), 
+            GameObject newPlatform = GameObject.Instantiate(chosenPlatform, new Vector3(prevPosition + this._rng.NextFloat(0, 1.5f), 
+                this._y + _rng.NextFloat(-0.5f, 0.5f), this._z), 
                 Quaternion.identity, 
                 _managerTransform);
             
@@ -97,8 +97,8 @@ public class Platforms
             
             // Get the last building for the new update position 
             GameObject firstBuilding = _platforms.Last();
-            Vector3 newPos = new Vector3(firstBuilding.transform.position.x + ((firstBuilding.GetComponent<Renderer>().bounds.size.x + xSize) / 2) + this._rng.NextFloat(0, 2f) ,
-                this._y - _rng.NextFloat(-1f, 0.5f), 0); 
+            Vector3 newPos = new Vector3(firstBuilding.transform.position.x + ((firstBuilding.GetComponent<Renderer>().bounds.size.x + xSize) / 2) + this._rng.NextFloat(0, 1.5f) ,
+                this._y - _rng.NextFloat(-0.5f, 0.5f), 0); 
             GameObject newBuilding = GameObject.Instantiate(chosenPlatform, newPos, Quaternion.identity, this._managerTransform);
             _platforms.Add(newBuilding);
         }

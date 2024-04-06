@@ -1,0 +1,1654 @@
+fileFormatVersion: 2
+guid: 6dfcee2186b21e94fa9c7b6fde961422
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 777
+        width: 23
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c27820c2798ee4bb8f104384999994
+      internalID: 434294369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 777
+        width: 23
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f482649cb1a76504e8876d46b90db179
+      internalID: -1545780699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 776
+        width: 23
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1dee3cb2638bb140b6a86095e4cd284
+      internalID: 1808408134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 777
+        width: 23
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8b6cd4b70e27949a131b069dd79284
+      internalID: 1430505382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 777
+        width: 23
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9118f445762b042a88c5b5d179fe1e
+      internalID: 150657230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 690
+        width: 28
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9846000042ddae49898d3eaf4a22ea0
+      internalID: -312375395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 690
+        width: 28
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b217cb7b46a170a418b295810c55095e
+      internalID: -2043347658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 690
+        width: 28
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fdb91287fabc9d43a60134373af970f
+      internalID: -862975038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 690
+        width: 28
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cec6c1ab09a57c4ebb17123fea790b2
+      internalID: -1421540150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 691
+        width: 28
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4ba6e9c7ec8d443a1e5c232584f956
+      internalID: 1428098194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 691
+        width: 28
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359686bcac9c7c2479fd7c435f0fb3cd
+      internalID: 1966977539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 608
+        width: 28
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154a7c14afe51b541881ebfc9551db47
+      internalID: 1401462443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 608
+        width: 28
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbdd36bc6699f7f418e21164987b8880
+      internalID: -2036360551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 608
+        width: 28
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73dcfa957e1ba6e49abccc8988dacf80
+      internalID: 2022359833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 608
+        width: 28
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06fd336752b3035448c492767190a07d
+      internalID: -94638634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 608
+        width: 28
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0e183742f349e48bd76c1f5c621c04
+      internalID: -1771148047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 513
+        width: 28
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e375e940a388b45a0b9cc5456bf0c2
+      internalID: 39475020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 514
+        width: 28
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6c70d5b38f0474bb0d2a745870d3e0
+      internalID: 536176547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 514
+        width: 28
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6c121cffd4b4f4490058ff275a875c
+      internalID: 1938662627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 514
+        width: 28
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237e9eaff098b3f49a2ed57040519039
+      internalID: 536500684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 513
+        width: 28
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b45de2b65cd28441b3cc900b79b8d93
+      internalID: -1215577432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 410
+        width: 26
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4fc64c3d77ba143a5849a82d6d2a87
+      internalID: 1708323112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 410
+        width: 25
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ad9ff50bcc07347a72fc5ead472b87
+      internalID: -131452666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 410
+        width: 27
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455c4a4d6daf9a046b6d7d53d758e5ba
+      internalID: 748484433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 410
+        width: 28
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19acd7f358988148972fee19725ea2b
+      internalID: -1585709108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 410
+        width: 28
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575daf14eb1ee524f9e265d89fcadf7e
+      internalID: -1251625195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 410
+        width: 26
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3eae733d35cef147803bb72267eec6b
+      internalID: 916563158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 410
+        width: 26
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3898d37cef768f04ba96d93d8d8ab2bf
+      internalID: 430057870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 409
+        width: 23
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99af41c449014c242901649bcd936c41
+      internalID: 2109452575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 410
+        width: 23
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940114a664c6c4a4b90e2b7b8b2b8b48
+      internalID: -1808061980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 315
+        width: 29
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81353a0c2489bd647b3057c45c2160f6
+      internalID: 1620265604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 315
+        width: 43
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f713fdb8721f5ed4784405d53e88918f
+      internalID: -137774332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 315
+        width: 42
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54366d7fda128484c8e15672d2df4f7e
+      internalID: -127049635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 315
+        width: 37
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e10ed7b41c5724b9ab238bad0e41e6
+      internalID: -1180046271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 315
+        width: 36
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a53c00f4d4d25940a9d1f5e59170033
+      internalID: 1364606217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 317
+        width: 48
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80c82be7cfeb0042847d27379ca491c
+      internalID: 182064420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_36
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 317
+        width: 40
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d178cc872ee2f4b8e27c512cd0cdca
+      internalID: 750601100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_37
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 316
+        width: 40
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3d75b3c9061b74fb512e191ec6d46e
+      internalID: -1897328544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_38
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 316
+        width: 35
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e229e7219dcf9b4ba47b605e40cf34f
+      internalID: -1640898186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 316
+        width: 32
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ee35ed27b852746bede3da728c6cf4
+      internalID: -234364959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 216
+        width: 23
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4722c0b5b165eae4682f31b61a98ec68
+      internalID: 648518224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_41
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 216
+        width: 24
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8a03ad192377e43b0ccc97a6b6323d
+      internalID: 410166849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_42
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 216
+        width: 23
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a97a75db26c1d146a7081b4b4819868
+      internalID: -894667047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_43
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 216
+        width: 27
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1812aab2399b430449d9ae8977071ffe
+      internalID: 1411042845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_44
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 115
+        width: 32
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb238d8653743c478c2e67bb1fd210b
+      internalID: -1413569183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_45
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 115
+        width: 38
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037c004679509924aae9ade79d7c95d7
+      internalID: -299524348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_46
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 115
+        width: 27
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f4af185ebde55448542b5cf5af8381
+      internalID: -1752381555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_47
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 115
+        width: 27
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf8ed0904b5520043b34f94c5402160d
+      internalID: -720028822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_48
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 115
+        width: 27
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26e7ed1f1601df4caeb62bf2ec87bd9
+      internalID: 2026008578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_49
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 115
+        width: 27
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1325b9996d5cf4c89ef8649956a6d9
+      internalID: 299090227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_50
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 115
+        width: 27
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763d2e4d66ec60841a673f12a80481c7
+      internalID: 353566130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_51
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 115
+        width: 30
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24eab4c59307b04f98576ec82ce4ba1
+      internalID: -863150267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_52
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 115
+        width: 29
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7785a9c1bedde3e4b81cad314a4ad70c
+      internalID: -2007403189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_53
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 115
+        width: 26
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23efcf1b8aee8f149a15a5b9a0b73347
+      internalID: -2079141251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_54
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 115
+        width: 29
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0493ce864706049911c79c1560c013
+      internalID: 1324707701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_55
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 115
+        width: 49
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7a9e9b6bca6a84e9e72c61a1bb8b9e
+      internalID: -2010612895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_56
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 17
+        width: 23
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbadb39af46b8541afbd3c3373ab675
+      internalID: 107103909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_57
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 17
+        width: 24
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7fc6643478099f439811db42617aff0
+      internalID: 834726094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_58
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 17
+        width: 26
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b2ee584b5b30641b4f08a9e475d934
+      internalID: 2041884974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_59
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 17
+        width: 26
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3859caf06087a24eb35f1b06ef53b1d
+      internalID: 355626927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_60
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 16
+        width: 26
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592ffb27701de8849958a93d335f8912
+      internalID: 1029790056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_61
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 17
+        width: 26
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7659a503c42b074da28bd2b9d5b6ef9
+      internalID: -882148859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_62
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 17
+        width: 26
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a88c4c0282c26a4b9b2c400a1291302
+      internalID: -1618502654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_63
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 17
+        width: 23
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225b62f6be0d49147b03dfa28fc0bb54
+      internalID: -92714022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_64
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 17
+        width: 24
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d1e7e988bcc2545bcdf64b1205f42c
+      internalID: 2053312094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_65
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 17
+        width: 24
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335bec06e179245488871c1d69120313
+      internalID: -478273457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_66
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 17
+        width: 25
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e10a2609c0273408ea02b306b18758
+      internalID: -1624383760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_67
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 16
+        width: 23
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c537ac07455615468870d4961a7a619
+      internalID: 1145915777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_68
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 17
+        width: 24
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fa4401717d5e24c9c42822df1c2f5b
+      internalID: 2134344799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satoru_gojo_sprites_sheet_69
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 17
+        width: 23
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c432aab96a152dd4d8b9b133e73e7e6a
+      internalID: 541786701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      satoru_gojo_sprites_sheet_0: 434294369
+      satoru_gojo_sprites_sheet_1: -1545780699
+      satoru_gojo_sprites_sheet_10: 1966977539
+      satoru_gojo_sprites_sheet_11: 1401462443
+      satoru_gojo_sprites_sheet_12: -2036360551
+      satoru_gojo_sprites_sheet_13: 2022359833
+      satoru_gojo_sprites_sheet_14: -94638634
+      satoru_gojo_sprites_sheet_15: -1771148047
+      satoru_gojo_sprites_sheet_16: 39475020
+      satoru_gojo_sprites_sheet_17: 536176547
+      satoru_gojo_sprites_sheet_18: 1938662627
+      satoru_gojo_sprites_sheet_19: 536500684
+      satoru_gojo_sprites_sheet_2: 1808408134
+      satoru_gojo_sprites_sheet_20: -1215577432
+      satoru_gojo_sprites_sheet_21: 1708323112
+      satoru_gojo_sprites_sheet_22: -131452666
+      satoru_gojo_sprites_sheet_23: 748484433
+      satoru_gojo_sprites_sheet_24: -1585709108
+      satoru_gojo_sprites_sheet_25: -1251625195
+      satoru_gojo_sprites_sheet_26: 916563158
+      satoru_gojo_sprites_sheet_27: 430057870
+      satoru_gojo_sprites_sheet_28: 2109452575
+      satoru_gojo_sprites_sheet_29: -1808061980
+      satoru_gojo_sprites_sheet_3: 1430505382
+      satoru_gojo_sprites_sheet_30: 1620265604
+      satoru_gojo_sprites_sheet_31: -137774332
+      satoru_gojo_sprites_sheet_32: -127049635
+      satoru_gojo_sprites_sheet_33: -1180046271
+      satoru_gojo_sprites_sheet_34: 1364606217
+      satoru_gojo_sprites_sheet_35: 182064420
+      satoru_gojo_sprites_sheet_36: 750601100
+      satoru_gojo_sprites_sheet_37: -1897328544
+      satoru_gojo_sprites_sheet_38: -1640898186
+      satoru_gojo_sprites_sheet_39: -234364959
+      satoru_gojo_sprites_sheet_4: 150657230
+      satoru_gojo_sprites_sheet_40: 648518224
+      satoru_gojo_sprites_sheet_41: 410166849
+      satoru_gojo_sprites_sheet_42: -894667047
+      satoru_gojo_sprites_sheet_43: 1411042845
+      satoru_gojo_sprites_sheet_44: -1413569183
+      satoru_gojo_sprites_sheet_45: -299524348
+      satoru_gojo_sprites_sheet_46: -1752381555
+      satoru_gojo_sprites_sheet_47: -720028822
+      satoru_gojo_sprites_sheet_48: 2026008578
+      satoru_gojo_sprites_sheet_49: 299090227
+      satoru_gojo_sprites_sheet_5: -312375395
+      satoru_gojo_sprites_sheet_50: 353566130
+      satoru_gojo_sprites_sheet_51: -863150267
+      satoru_gojo_sprites_sheet_52: -2007403189
+      satoru_gojo_sprites_sheet_53: -2079141251
+      satoru_gojo_sprites_sheet_54: 1324707701
+      satoru_gojo_sprites_sheet_55: -2010612895
+      satoru_gojo_sprites_sheet_56: 107103909
+      satoru_gojo_sprites_sheet_57: 834726094
+      satoru_gojo_sprites_sheet_58: 2041884974
+      satoru_gojo_sprites_sheet_59: 355626927
+      satoru_gojo_sprites_sheet_6: -2043347658
+      satoru_gojo_sprites_sheet_60: 1029790056
+      satoru_gojo_sprites_sheet_61: -882148859
+      satoru_gojo_sprites_sheet_62: -1618502654
+      satoru_gojo_sprites_sheet_63: -92714022
+      satoru_gojo_sprites_sheet_64: 2053312094
+      satoru_gojo_sprites_sheet_65: -478273457
+      satoru_gojo_sprites_sheet_66: -1624383760
+      satoru_gojo_sprites_sheet_67: 1145915777
+      satoru_gojo_sprites_sheet_68: 2134344799
+      satoru_gojo_sprites_sheet_69: 541786701
+      satoru_gojo_sprites_sheet_7: -862975038
+      satoru_gojo_sprites_sheet_8: -1421540150
+      satoru_gojo_sprites_sheet_9: 1428098194
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
