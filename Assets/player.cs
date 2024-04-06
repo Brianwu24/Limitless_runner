@@ -33,10 +33,10 @@ public class Player : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D other)
     {
         Debug.Log(other.gameObject.name);
-        if (other.gameObject.CompareTag("Player"))
-        {
-            Debug.Log(true);
-        }
+        // if (other.gameObject.CompareTag("Player"))
+        // {
+        //     Debug.Log(true);
+        // }
     }
 
     // private void GetPowerUp()
