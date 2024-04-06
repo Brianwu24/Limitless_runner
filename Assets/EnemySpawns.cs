@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         // Check if it's time to spawn a new enemy
-        if (Time.time - lastSpawnTime > UnityEngine.Random.Range(0, 0.1f))
+        if (Time.time - lastSpawnTime > UnityEngine.Random.Range(2, 5.5f))
         {
             SpawnEnemy();
             lastSpawnTime = Time.time;
