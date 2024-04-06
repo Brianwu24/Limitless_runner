@@ -1,0 +1,223 @@
+Index: Assets/Background/test2.cs.meta
+===================================================================
+diff --git a/Assets/Background/test2.cs.meta b/Assets/Background/test2.cs.meta
+deleted file mode 100644
+--- a/Assets/Background/test2.cs.meta	(revision ad632bd970e2485480f0e931551ed89190b21969)
++++ /dev/null	(revision ad632bd970e2485480f0e931551ed89190b21969)
+@@ -1,11 +0,0 @@
+-fileFormatVersion: 2
+-guid: fcff6e7c166186a4fa4b60d035dfe80c
+-MonoImporter:
+-  externalObjects: {}
+-  serializedVersion: 2
+-  defaultReferences: []
+-  executionOrder: 0
+-  icon: {instanceID: 0}
+-  userData: 
+-  assetBundleName: 
+-  assetBundleVariant: 
+Index: Assets/Background/test2.cs
+===================================================================
+diff --git a/Assets/Background/test2.cs b/Assets/Background/test2.cs
+deleted file mode 100644
+--- a/Assets/Background/test2.cs	(revision ad632bd970e2485480f0e931551ed89190b21969)
++++ /dev/null	(revision ad632bd970e2485480f0e931551ed89190b21969)
+@@ -1,125 +0,0 @@
+-using System;
+-using System.Linq;
+-using System.Collections.Generic;
+-
+-
+-using UnityEngine;
+-using Random = Unity.Mathematics.Random;
+-
+-
+-public class Platforms
+-{
+-    private GameController _gameController;
+-    private Transform _parentTransform;
+-    private Transform _managerTransform; 
+-    private List<GameObject> _refPlatforms;
+-    private List<GameObject> _platforms;
+-
+-    private Random _rng;
+-    private Vector3 _updateInc;
+-    
+-
+-    public Platforms(GameController gameController, Transform parentTransform, Transform managerTransform)
+-    {
+-
+-        _parentTransform = parentTransform;
+-        _gameController = gameController;
+-        _rng = new Random((uint)UnityEngine.Random.Range(1, 100000));
+-
+-        _refPlatforms = new List<GameObject>();
+-        _platforms = new List<GameObject>();
+-        //Getting ref platforms
+-
+-        Transform _managerTansform = managerTransform;
+-        
+-        
+-        foreach (Transform child in _parentTransform)
+-        {
+-            _refPlatforms.Add(child.gameObject);
+-        }
+-
+-        //Generating initial plats
+-        float prevPosition = -8.9f;
+-        
+-        for (int i = 0; i < 20; i++)
+-        {
+-            int randomNum = this._rng.NextInt(0, this._refPlatforms.Count);
+-            
+-            GameObject chosenPlatform = _refPlatforms[randomNum];
+-            float xSize = chosenPlatform.GetComponent<Renderer>().bounds.size.x / 2f;
+-            prevPosition += xSize; // 
+-            GameObject newPlatform = GameObject.Instantiate(chosenPlatform, new Vector3(prevPosition + 0.1f, 0, 0), Quaternion.identity, _managerTansform);
+-            _platforms.Add(newPlatform);
+-            prevPosition += xSize;
+-        }
+-        
+-        
+-    }
+-    private void UpdateInc()
+-    {
+-        this._updateInc.x = 1.1f * this._gameController.GetSpeed() * Time.deltaTime;
+-    }
+-    
+-    public void UpdatePlatforms()
+-    {
+-        UpdateInc();
+-        bool isDestroyPlatform = false;
+-        foreach (GameObject platform in this._platforms)
+-        {
+-            platform.transform.position -= _updateInc;
+-
+-            if (platform.transform.position.x <= -8.9)
+-            {
+-                isDestroyPlatform = true;
+-            }                
+-        }
+-
+-        if (isDestroyPlatform)
+-        {
+-            GameObject badPlatform = this._platforms[0];
+-            _platforms.RemoveAt(0);
+-            GameObject.Destroy(badPlatform);
+-                
+-            int randomChoice = _rng.NextInt(0, this._refPlatforms.Count);
+-            GameObject chosenPlatform = _platforms[randomChoice];
+-            float xSize = chosenPlatform.GetComponent<Renderer>().bounds.size.x;
+-            
+-            // Get the last building for the new update position 
+-            GameObject firstBuilding = _platforms.Last();
+-            Vector3 newPos = new Vector3(firstBuilding.transform.position.x + (firstBuilding.GetComponent<Renderer>().bounds.size.x + xSize) / 2,
+-                0- _rng.NextFloat(0f, 0.15f), 0); 
+-            GameObject newBuilding = GameObject.Instantiate(chosenPlatform, newPos, Quaternion.identity, this._managerTransform);
+-            _platforms.Add(newBuilding);
+-        }
+-        
+-        
+-        
+-    }
+-    
+-
+-}
+-
+-
+-public class test2 : MonoBehaviour
+-{
+-    public GameObject gameController;
+-    private GameController _gameController;
+-
+-    public GameObject parent;
+-
+-    private Platforms platfrom1;
+-    
+-    
+-    // Start is called before the first frame update
+-    void Start()
+-    {
+-        _gameController = gameController.GetComponent<GameController>();   
+-        platfrom1 = new Platforms(_gameController, parent.transform, this.transform);
+-    }
+-
+-    // Update is called once per frame
+-    void Update()
+-    {
+-        platfrom1.UpdatePlatforms();
+-    }
+-}
+Index: .idea/.idea.Limitless_Runner/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"af802463-7ed8-4e98-8615-c744a2ce38e3\" name=\"Changes\" comment=\"Saved unity\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"Ethan's-Branch-1\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"ROOT_SYNC\" value=\"SYNC\" />\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/a2/a4a722fb/Random.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/cd/8bcee734/Object.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Background/BackgroundController.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Background/BackgroundController.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Background/opacity.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/GameController.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/PowerUps/PowerUpManger.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/player.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/test.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/random.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"MetaFilesCheckinStateConfiguration\" checkMetaFiles=\"true\" />\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 4\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2eEhzPiBcgJgojh8K12C4CQQKif\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;rider.external.source.directories&quot;: [\r\n      &quot;C:\\\\Users\\\\TryHarder\\\\AppData\\\\Local\\\\JetBrains\\\\Shared\\\\vAny\\\\DecompilerCache&quot;,\r\n      &quot;C:\\\\Users\\\\TryHarder\\\\AppData\\\\Local\\\\JetBrains\\\\Shared\\\\vAny\\\\SourcesCache&quot;,\r\n      &quot;C:\\\\Users\\\\TryHarder\\\\AppData\\\\Local\\\\Symbols\\\\src&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\" selected=\"Attach to Unity Editor.Attach to Unity Editor\">\r\n    <configuration name=\"Start Unity\" type=\"RunUnityExe\" factoryName=\"Unity Executable\">\r\n      <option name=\"EXE_PATH\" value=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.20f1\\Editor\\Unity.exe\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"-projectPath C:\\Users\\TryHarder\\Desktop\\Unityprojects\\Limitless_Runner -debugCodeOptimization\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"C:\\Users\\TryHarder\\Desktop\\Unityprojects\\Limitless_Runner\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"1\" />\r\n      <option name=\"USE_EXTERNAL_CONSOLE\" value=\"0\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Unit Tests (batch mode)\" type=\"RunUnityExe\" factoryName=\"Unity Executable\">\r\n      <option name=\"EXE_PATH\" value=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.20f1\\Editor\\Unity.exe\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"-runTests -batchmode -projectPath C:\\Users\\TryHarder\\Desktop\\Unityprojects\\Limitless_Runner -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"C:\\Users\\TryHarder\\Desktop\\Unityprojects\\Limitless_Runner\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"1\" />\r\n      <option name=\"USE_EXTERNAL_CONSOLE\" value=\"0\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Attach to Unity Editor &amp; Play\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"UNITY_ATTACH_AND_PLAY\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" />\r\n      <option name=\"projectPathOnTarget\" />\r\n      <option name=\"selectedOptions\">\r\n        <list />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Attach to Unity Editor\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"Unity Debug\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" />\r\n      <option name=\"projectPathOnTarget\" />\r\n      <option name=\"selectedOptions\">\r\n        <list />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"af802463-7ed8-4e98-8615-c744a2ce38e3\" name=\"Changes\" comment=\"\" />\r\n      <created>1711475909626</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1711475909626</updated>\r\n      <workItem from=\"1711475909629\" duration=\"370000\" />\r\n      <workItem from=\"1711476741555\" duration=\"223000\" />\r\n      <workItem from=\"1711476981530\" duration=\"139000\" />\r\n      <workItem from=\"1711477133466\" duration=\"11000\" />\r\n      <workItem from=\"1711477158243\" duration=\"376000\" />\r\n      <workItem from=\"1711986169901\" duration=\"2951000\" />\r\n      <workItem from=\"1712001042838\" duration=\"1771000\" />\r\n      <workItem from=\"1712073395393\" duration=\"562000\" />\r\n      <workItem from=\"1712074000473\" duration=\"3632000\" />\r\n      <workItem from=\"1712081116954\" duration=\"1282000\" />\r\n      <workItem from=\"1712083950932\" duration=\"4911000\" />\r\n      <workItem from=\"1712093595483\" duration=\"17677000\" />\r\n      <workItem from=\"1712160945797\" duration=\"2894000\" />\r\n      <workItem from=\"1712165498033\" duration=\"3724000\" />\r\n      <workItem from=\"1712173591481\" duration=\"410000\" />\r\n      <workItem from=\"1712174018489\" duration=\"83000\" />\r\n      <workItem from=\"1712174116507\" duration=\"4439000\" />\r\n      <workItem from=\"1712178898766\" duration=\"1968000\" />\r\n      <workItem from=\"1712189168474\" duration=\"9988000\" />\r\n      <workItem from=\"1712280234347\" duration=\"2467000\" />\r\n      <workItem from=\"1712350781636\" duration=\"1146000\" />\r\n      <workItem from=\"1712354758780\" duration=\"5791000\" />\r\n      <workItem from=\"1712365236390\" duration=\"8323000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Init commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1711476258537</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1711476258537</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Update cuz i broke something\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1711477259306</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1711477259306</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Update2 cuz I broke something\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1711477358536</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1711477358536</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Update 3 cuz I forgor sth\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1711477383597</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1711477383597</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Added image because git refused to commit an empty folder\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1711477489889</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1711477489889</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"update\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1711477719569</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1711477719569</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Deleted sukuna cycle\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1711986388574</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1711986388575</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Added specialz as the music\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1711988649621</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1711988649621</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Renamed to main scene\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712074657731</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712074657731</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Refractored code\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712075682249</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712075682249</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Added a GameController\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712076416941</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712076416941</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Added background, not working yet\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712082405611</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712082405611</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"Update to background\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712085544742</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712085544742</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"Made main background move. Major updated\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712088868029</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712088868029</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"Updated Camera\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712094270229</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712094270229</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"Updated background, and fixed character not in camera\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712094765934</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712094765934</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"Made Sky background\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712110006143</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712110006143</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"Changed class name to fit convention\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712110112618</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712110112618</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"Fixed error\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712110266009</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712110266009</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00020\" summary=\"Added building sprites\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712112533645</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712112533645</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00021\" summary=\"fix\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712113285930</created>\r\n      <option name=\"number\" value=\"00021\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712113285930</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00022\" summary=\"Init Commit because I screwed something up\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712174145950</created>\r\n      <option name=\"number\" value=\"00022\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712174145951</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00023\" summary=\"Final Update for fix\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712251636412</created>\r\n      <option name=\"number\" value=\"00023\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00023\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712251636412</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00024\" summary=\"Made sure that BackgroundController.cs is here\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712251926903</created>\r\n      <option name=\"number\" value=\"00024\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00024\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712251926903</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00025\" summary=\"Added base powerup class\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712282847712</created>\r\n      <option name=\"number\" value=\"00025\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00025\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712282847712</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00026\" summary=\"Attempt to implement collisions with powerups\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712355449887</created>\r\n      <option name=\"number\" value=\"00026\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00026\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712355449887</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00027\" summary=\"Update\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712357181803</created>\r\n      <option name=\"number\" value=\"00027\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00027\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712357181803</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00028\" summary=\"Fixed null object\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712357223734</created>\r\n      <option name=\"number\" value=\"00028\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00028\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712357223734</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00029\" summary=\"Made powerups\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712364595629</created>\r\n      <option name=\"number\" value=\"00029\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00029\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712364595629</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00030\" summary=\"update\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712364605054</created>\r\n      <option name=\"number\" value=\"00030\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00030\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712364605054</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00031\" summary=\"Added buildings images\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712364953540</created>\r\n      <option name=\"number\" value=\"00031\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00031\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712364953540</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00032\" summary=\"Minor code refractor\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712366233893</created>\r\n      <option name=\"number\" value=\"00032\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00032\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712366233893</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00033\" summary=\"Update, bug fix\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712373114713</created>\r\n      <option name=\"number\" value=\"00033\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00033\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712373114714</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00034\" summary=\"Saved unity\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1712373134158</created>\r\n      <option name=\"number\" value=\"00034\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00034\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712373134158</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"35\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"UnityCheckinConfiguration\" checkUnsavedScenes=\"true\" />\r\n  <component name=\"UnityProjectConfiguration\" hasMinimizedUI=\"true\" />\r\n  <component name=\"UnityUnitTestConfiguration\" currentTestLauncher=\"Both\" />\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"CLEAR_INITIAL_COMMIT_MESSAGE\" value=\"true\" />\r\n    <MESSAGE value=\"Added a GameController\" />\r\n    <MESSAGE value=\"Added background, not working yet\" />\r\n    <MESSAGE value=\"Update to background\" />\r\n    <MESSAGE value=\"Made main background move. Major updated\" />\r\n    <MESSAGE value=\"Updated Camera\" />\r\n    <MESSAGE value=\"Updated background, and fixed character not in camera\" />\r\n    <MESSAGE value=\"Made Sky background\" />\r\n    <MESSAGE value=\"Changed class name to fit convention\" />\r\n    <MESSAGE value=\"Fixed error\" />\r\n    <MESSAGE value=\"Added building sprites\" />\r\n    <MESSAGE value=\"fix\" />\r\n    <MESSAGE value=\"Init Commit because I screwed something up\" />\r\n    <MESSAGE value=\"Final Update for fix\" />\r\n    <MESSAGE value=\"Made sure that BackgroundController.cs is here\" />\r\n    <MESSAGE value=\"Added base powerup class\" />\r\n    <MESSAGE value=\"Attempt to implement collisions with powerups\" />\r\n    <MESSAGE value=\"Update\" />\r\n    <MESSAGE value=\"Fixed null object\" />\r\n    <MESSAGE value=\"Made powerups\" />\r\n    <MESSAGE value=\"update\" />\r\n    <MESSAGE value=\"bru\" />\r\n    <MESSAGE value=\"Added buildings images\" />\r\n    <MESSAGE value=\"Minor code refractor\" />\r\n    <MESSAGE value=\"Update, bug fix\" />\r\n    <MESSAGE value=\"Saved unity\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Saved unity\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.Limitless_Runner/.idea/workspace.xml b/.idea/.idea.Limitless_Runner/.idea/workspace.xml
+--- a/.idea/.idea.Limitless_Runner/.idea/workspace.xml	(revision ad632bd970e2485480f0e931551ed89190b21969)
++++ b/.idea/.idea.Limitless_Runner/.idea/workspace.xml	(date 1712374157584)
+@@ -4,9 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Saved unity">
+-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
+-    </list>
++    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Update" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -31,6 +29,7 @@
+     <setting file="file://$PROJECT_DIR$/Assets/GameController.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/PowerUpManger.cs" root0="FORCE_HIGHLIGHTING" />
++    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity" root0="SKIP_HIGHLIGHTING" />
+     <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity" root0="SKIP_HIGHLIGHTING" />
+     <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity" root0="SKIP_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/player.cs" root0="FORCE_HIGHLIGHTING" />
+@@ -136,7 +135,7 @@
+       <workItem from="1712280234347" duration="2467000" />
+       <workItem from="1712350781636" duration="1146000" />
+       <workItem from="1712354758780" duration="5791000" />
+-      <workItem from="1712365236390" duration="8323000" />
++      <workItem from="1712365236390" duration="8697000" />
+     </task>
+     <task id="LOCAL-00001" summary="Init commit">
+       <option name="closed" value="true" />
+@@ -410,7 +409,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1712373134158</updated>
+     </task>
+-    <option name="localTasksCounter" value="35" />
++    <task id="LOCAL-00035" summary="Update">
++      <option name="closed" value="true" />
++      <created>1712373935872</created>
++      <option name="number" value="00035" />
++      <option name="presentableId" value="LOCAL-00035" />
++      <option name="project" value="LOCAL" />
++      <updated>1712373935872</updated>
++    </task>
++    <option name="localTasksCounter" value="36" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -448,7 +455,6 @@
+     <MESSAGE value="Made sure that BackgroundController.cs is here" />
+     <MESSAGE value="Added base powerup class" />
+     <MESSAGE value="Attempt to implement collisions with powerups" />
+-    <MESSAGE value="Update" />
+     <MESSAGE value="Fixed null object" />
+     <MESSAGE value="Made powerups" />
+     <MESSAGE value="update" />
+@@ -457,6 +463,7 @@
+     <MESSAGE value="Minor code refractor" />
+     <MESSAGE value="Update, bug fix" />
+     <MESSAGE value="Saved unity" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Saved unity" />
++    <MESSAGE value="Update" />
++    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+   </component>
+ </project>
+\ No newline at end of file
