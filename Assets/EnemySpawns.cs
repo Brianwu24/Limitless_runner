@@ -1,16 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public Vector3 spawnPoint;
+    public GameObject enemyPrefab;
+    public Transform spawnPoint;
     private float lastSpawnTime;
 
     private void Update()
     {
         // Check if it's time to spawn a new enemy
-        if (Time.time - lastSpawnTime > Random.Range(1f, 5f))
+        if (Time.time - lastSpawnTime > UnityEngine.Random.Range(1f, 5f))
         {
             SpawnEnemy();
             lastSpawnTime = Time.time;
@@ -19,24 +21,23 @@ public class GameManager : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        // Instantiate enemy at the spawn point
-        GameObject newEnemy = new GameObject("Enemy");
-        newEnemy.transform.position = spawnPoint;
+        // Spawn enemy at a random position along the top border
+        Vector3 spawnPosition = new Vector3(UnityEngine.Random.Range(-8.9f, 8.9f), 10f, 0f);
+        GameObject newEnemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
 
-        // Attach the EnemyController script to the spawned enemy
-        newEnemy.AddComponent<EnemyController>();
+        // Attach the Enemy component to the spawned enemy
+        newEnemy.AddComponent<Enemy>();
     }
 }
 
-public class EnemyController : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     private static readonly float removalXPosition = -10f;
-    private float speed = 2f; // Speed of enemy movement to the left
 
     private void Update()
     {
-        // Move the enemy to the left
-        transform.Translate(Vector3.left * speed * Time.deltaTime);
+        // Move the enemy downwards
+        transform.Translate(Vector3.down * Time.deltaTime);
 
         // Check if the enemy is past the left border, remove it if true
         if (transform.position.x < removalXPosition)
