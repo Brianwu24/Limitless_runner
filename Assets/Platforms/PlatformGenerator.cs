@@ -87,7 +87,7 @@ public class Platforms
             // Get the last building for the new update position 
             GameObject firstBuilding = _platforms.Last();
             Vector3 newPos = new Vector3(firstBuilding.transform.position.x + (firstBuilding.GetComponent<Renderer>().bounds.size.x + xSize) / 2,
-                0- _rng.NextFloat(0f, 0.15f), 0); 
+                -3 - _rng.NextFloat(0f, 1f), 0); 
             GameObject newBuilding = GameObject.Instantiate(chosenPlatform, newPos, Quaternion.identity, this._managerTransform);
             _platforms.Add(newBuilding);
         }
