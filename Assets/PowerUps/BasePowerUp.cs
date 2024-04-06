@@ -2,19 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasePowerUp
+public class BasePowerUp : MonoBehaviour
 {
-    private float _scoreIncrease;
-    private GameController _game;
-
-    public BasePowerUp(float score)
+    // Start is called before the first frame update
+    void Start()
     {
-        _scoreIncrease = score;
+        
     }
+
     // Update is called once per frame
     void Update()
     {
         
     }
 }
-

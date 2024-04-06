@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-05_6_45_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-05_6_45_p_m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" afterDir="false" />
-    </list>
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,7 +140,6 @@
       <workItem from="1712280234347" duration="2467000" />
       <workItem from="1712350781636" duration="1146000" />
       <workItem from="1712354758780" duration="5791000" />
-      <workItem from="1712365236390" duration="874000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
