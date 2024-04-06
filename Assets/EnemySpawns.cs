@@ -6,43 +6,45 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject enemyPrefab;
-    public Transform spawnPoint;
+    public Vector3 spawnPoint;
     private float lastSpawnTime;
+
+    private List<GameObject> _enemies;
+
+    private void Start()
+    {
+        _enemies = new List<GameObject>();
+    }
 
     private void Update()
     {
         // Check if it's time to spawn a new enemy
-        if (Time.time - lastSpawnTime > UnityEngine.Random.Range(1f, 5f))
+        if (Time.time - lastSpawnTime > UnityEngine.Random.Range(0, 0.1f))
         {
             SpawnEnemy();
             lastSpawnTime = Time.time;
         }
+
+
+        for (int i = _enemies.Count - 1; i >= 0; i--)
+        {
+            GameObject enemy = _enemies[i];
+            if (enemy != null && enemy.transform.position.y <= -5.5)
+            {
+                _enemies.RemoveAt(i);
+                Destroy(enemy);
+            }
+        }
+        
     }
 
     private void SpawnEnemy()
     {
         // Spawn enemy at a random position along the top border
-        Vector3 spawnPosition = new Vector3(UnityEngine.Random.Range(-8.9f, 8.9f), 10f, 0f);
-        GameObject newEnemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
-
-        // Attach the Enemy component to the spawned enemy
-        newEnemy.AddComponent<Enemy>();
+        Vector3 spawnPosition = new Vector3(UnityEngine.Random.Range(0, 8.9f), 5f, -0f);
+        GameObject newEnemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity, this.transform);
+        _enemies.Add(newEnemy);
     }
 }
 
-public class Enemy : MonoBehaviour
-{
-    private static readonly float removalXPosition = -10f;
 
-    private void Update()
-    {
-        // Move the enemy downwards
-        transform.Translate(Vector3.down * Time.deltaTime);
-
-        // Check if the enemy is past the left border, remove it if true
-        if (transform.position.x < removalXPosition)
-        {
-            Destroy(gameObject);
-        }
-    }
-}
