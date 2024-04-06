@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Minor code refractor">
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Saved unity">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Background/BackgroundController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BackgroundController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +26,12 @@
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/cd/8bcee734/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Background/BackgroundController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Background/BackgroundController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Background/opacity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/PowerUpManger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/test.cs" root0="FORCE_HIGHLIGHTING" />
@@ -136,7 +136,7 @@
       <workItem from="1712280234347" duration="2467000" />
       <workItem from="1712350781636" duration="1146000" />
       <workItem from="1712354758780" duration="5791000" />
-      <workItem from="1712365236390" duration="7522000" />
+      <workItem from="1712365236390" duration="8323000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -394,7 +394,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712366233893</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Update, bug fix">
+      <option name="closed" value="true" />
+      <created>1712373114713</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1712373114714</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Saved unity">
+      <option name="closed" value="true" />
+      <created>1712373134158</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1712373134158</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,8 +432,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Renamed to main scene" />
-    <MESSAGE value="Refractored code" />
     <MESSAGE value="Added a GameController" />
     <MESSAGE value="Added background, not working yet" />
     <MESSAGE value="Update to background" />
@@ -441,6 +455,8 @@
     <MESSAGE value="bru" />
     <MESSAGE value="Added buildings images" />
     <MESSAGE value="Minor code refractor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor code refractor" />
+    <MESSAGE value="Update, bug fix" />
+    <MESSAGE value="Saved unity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Saved unity" />
   </component>
 </project>
