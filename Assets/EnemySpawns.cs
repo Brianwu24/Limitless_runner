@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         // Check if it's time to spawn a new enemy
-        if (Time.time - lastSpawnTime > UnityEngine.Random.Range(0, 0.1f))
+        if (Time.time - lastSpawnTime > UnityEngine.Random.Range(0, 2f))
         {
             SpawnEnemy();
             lastSpawnTime = Time.time;
@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     private void SpawnEnemy()
     {
         // Spawn enemy at a random position along the top border
-        Vector3 spawnPosition = new Vector3(UnityEngine.Random.Range(0, 8.9f), 5f, -0f);
+        Vector3 spawnPosition = new Vector3(UnityEngine.Random.Range(8.9f, 17f), 5f, -0f);
         GameObject newEnemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity, this.transform);
         _enemies.Add(newEnemy);
     }

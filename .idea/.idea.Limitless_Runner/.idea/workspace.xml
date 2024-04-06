@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Unity Update">
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-05_11_29_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-05_11_29_p_m___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-05_11_31_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-05_11_31_p_m___Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/EnemySpawns.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EnemySpawns.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Platforms/PlatformGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Platforms/PlatformGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Platforms/Platforms.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Platforms/Platforms.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +40,7 @@
     <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Background/BackgroundController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Background/opacity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemy/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/EnemySpawns.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Platforms/PlatformGenerator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" root0="FORCE_HIGHLIGHTING" />
@@ -144,7 +152,8 @@
       <workItem from="1712280234347" duration="2467000" />
       <workItem from="1712350781636" duration="1146000" />
       <workItem from="1712354758780" duration="5791000" />
-      <workItem from="1712365236390" duration="13247000" />
+      <workItem from="1712365236390" duration="14169000" />
+      <workItem from="1712423780414" duration="6165000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -442,7 +451,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712375057699</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Added Enemies and the OP CIRCLE AND TRIANGLE">
+      <option name="closed" value="true" />
+      <created>1712378994150</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1712378994150</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +481,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Update to background" />
     <MESSAGE value="Made main background move. Major updated" />
     <MESSAGE value="Updated Camera" />
     <MESSAGE value="Updated background, and fixed character not in camera" />
@@ -489,6 +505,7 @@
     <MESSAGE value="Update" />
     <MESSAGE value="Made PlatformGenerator.cs better" />
     <MESSAGE value="Unity Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Unity Update" />
+    <MESSAGE value="Added Enemies and the OP CIRCLE AND TRIANGLE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Enemies and the OP CIRCLE AND TRIANGLE" />
   </component>
 </project>

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -8,14 +9,15 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
 
     public float gravity;
-    public Vector2 velocity;            // Vector2 is the X & Y positions
-    public float jumpVelocity = 20;
-    public float groundHeight = 10;
+    
+    public float velocityY;         
+
     public bool grounded;
+    public bool inAir;
 
     public bool holdJump;
     public float maxHoldJumpTime = 0.4f;
-    public float jumpTimer;
+    public float jumpHoldTimer;
 
     public float jumpGrounddistance = 1; // so people can jump just before hitting the ground so it isn't clunky
 
@@ -32,11 +34,29 @@ public class Player : MonoBehaviour
     }
     public void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log(other.gameObject.name);
-        // if (other.gameObject.CompareTag("Player"))
-        // {
-        //     Debug.Log(true);
-        // }
+        if (other.gameObject.CompareTag("Platform"))
+        {
+            grounded = true;
+        }
+    }
+
+    public void OnCollisionStay(Collision other)
+    {
+        if (other.gameObject.CompareTag("Platform"))
+        {
+            // Debug.Log("Grounded");
+            grounded = true;
+        }
+    }
+
+    public void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.CompareTag("Platform"))
+        {
+            // Debug.Log("Not grounded");
+            grounded = false;
+            inAir = true;
+        }
     }
 
     // private void GetPowerUp()
@@ -54,64 +74,90 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 position = transform.position;
-        float groundDistance = Mathf.Abs(position.y - groundHeight);
 
-        if (grounded || groundDistance <= jumpGrounddistance)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (grounded)
             {
-                grounded = false;
-                velocity.y = jumpVelocity;
                 holdJump = true;
-                jumpTimer = 0;
+                jumpHoldTimer = 0;
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && holdJump && grounded)
+        {
+            jumpHoldTimer += Time.deltaTime;
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space) && grounded)
         {
             holdJump = false;
+            if (jumpHoldTimer > 3)
+            {
+                jumpHoldTimer = 3;
+            }
+            velocityY = 5 + jumpHoldTimer;
+            transform.Translate(Vector3.up * 0.1f);
+            grounded = false;
+            inAir = true;
+        }
+
+        if (grounded && inAir)
+        {
+            inAir = false;
+            velocityY = 0;
         }
         
         //Check for PowerUpCollision
         // GetPowerUp();
         
-
-
-
     }
 
     private void FixedUpdate()
     {
-        Vector2 position = transform.position;
-
-        if (!grounded)
+        // Vector2 position = transform.position;
+        // if (grounded)
+        // {
+        //     accelerationY = 0;
+        //     velocityY = 0;
+        //     
+        // }
+        // if (velocityY != 0)
+        // {
+        if (inAir)
         {
-
-            position.y += velocity.y * Time.fixedDeltaTime; // changing the player position every frame
-            if (!holdJump)
-            {
-                velocity.y += gravity * Time.fixedDeltaTime; // changing how much the y axis changes per frame
-            }
-
-            if (position.y <= groundHeight)
-            {
-                position.y = groundHeight;
-                grounded = true;
-            }
-
-            if (holdJump)
-            {
-                jumpTimer += Time.fixedDeltaTime;
-                if (jumpTimer >= maxHoldJumpTime)
-                {
-                    holdJump = false;
-                }
-            }
+            transform.Translate(Vector3.up * ((Time.deltaTime * velocityY) + (0.75f * gravity * MathF.Pow(Time.deltaTime , 2))));
         }
-
-
-        transform.position = position;
+            
+        // }
+    //
+    //     if (!grounded)
+    //     {
+    //
+    //         position.y += velocity.y * Time.fixedDeltaTime; // changing the player position every frame
+    //         if (!holdJump)
+    //         {
+    //             velocity.y += gravity * Time.fixedDeltaTime; // changing how much the y axis changes per frame
+    //         }
+    //
+    //         if (position.y <= groundHeight)
+    //         {
+    //             position.y = groundHeight;
+    //             grounded = true;
+    //         }
+    //
+    //         if (holdJump)
+    //         {
+    //             jumpTimer += Time.fixedDeltaTime;
+    //             if (jumpTimer >= maxHoldJumpTime)
+    //             {
+    //                 holdJump = false;
+    //             }
+    //         }
+    //     }
+    //
+    //
+        // transform.position = position;
     }
 
 }

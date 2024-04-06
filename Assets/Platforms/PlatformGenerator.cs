@@ -17,9 +17,12 @@ public class Platforms
 
     private Random _rng;
     private Vector3 _updateInc;
+
+    private float _y;
+    private float _z;
     
 
-    public Platforms(GameController gameController, Transform parentTransform, Transform managerTransform)
+    public Platforms(GameController gameController, float y, float z, Transform parentTransform, Transform managerTransform)
     {
 
         _parentTransform = parentTransform;
@@ -30,7 +33,11 @@ public class Platforms
         _platforms = new List<GameObject>();
         //Getting ref platforms
 
-        Transform _managerTansform = managerTransform;
+        _managerTransform = managerTransform;
+        _y = y;
+        _z = z;
+        
+        
         
         
         foreach (Transform child in _parentTransform)
@@ -48,7 +55,11 @@ public class Platforms
             GameObject chosenPlatform = _refPlatforms[randomNum];
             float xSize = chosenPlatform.GetComponent<Renderer>().bounds.size.x / 2f;
             prevPosition += xSize; // 
-            GameObject newPlatform = GameObject.Instantiate(chosenPlatform, new Vector3(prevPosition + 0.1f, 0, 0), Quaternion.identity, _managerTansform);
+            GameObject newPlatform = GameObject.Instantiate(chosenPlatform, new Vector3(prevPosition + this._rng.NextFloat(0, 2f), 
+                this._y + _rng.NextFloat(-1f, 0.5f), this._z), 
+                Quaternion.identity, 
+                _managerTransform);
+            
             _platforms.Add(newPlatform);
             prevPosition += xSize;
         }
@@ -57,7 +68,7 @@ public class Platforms
     }
     private void UpdateInc()
     {
-        this._updateInc.x = 1.1f * this._gameController.GetSpeed() * Time.deltaTime;
+        this._updateInc.x = 1f * this._gameController.GetSpeed() * Time.deltaTime;
     }
     
     public void UpdatePlatforms()
@@ -86,8 +97,8 @@ public class Platforms
             
             // Get the last building for the new update position 
             GameObject firstBuilding = _platforms.Last();
-            Vector3 newPos = new Vector3(firstBuilding.transform.position.x + (firstBuilding.GetComponent<Renderer>().bounds.size.x + xSize) / 2,
-                0- _rng.NextFloat(0f, 0.15f), 0); 
+            Vector3 newPos = new Vector3(firstBuilding.transform.position.x + ((firstBuilding.GetComponent<Renderer>().bounds.size.x + xSize) / 2) + this._rng.NextFloat(0, 2f) ,
+                this._y - _rng.NextFloat(-1f, 0.5f), 0); 
             GameObject newBuilding = GameObject.Instantiate(chosenPlatform, newPos, Quaternion.identity, this._managerTransform);
             _platforms.Add(newBuilding);
         }
@@ -114,7 +125,7 @@ public class PlatformGenerator : MonoBehaviour
     void Start()
     {
         _gameController = gameController.GetComponent<GameController>();   
-        platfrom1 = new Platforms(_gameController, parent.transform, this.transform);
+        platfrom1 = new Platforms(_gameController, -7, 0, parent.transform, this.transform);
     }
 
     // Update is called once per frame
