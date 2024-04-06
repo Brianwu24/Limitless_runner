@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="bru" />
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Minor code refractor">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/BackgroundController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BackgroundController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,22 +28,14 @@
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/cd/8bcee734/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Background/BackgroundController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Background/BackgroundController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Background/opacity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/PowerUps/Circle.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/PowerUpManger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/random.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -139,7 +135,8 @@
       <workItem from="1712189168474" duration="9988000" />
       <workItem from="1712280234347" duration="2467000" />
       <workItem from="1712350781636" duration="1146000" />
-      <workItem from="1712354758780" duration="5662000" />
+      <workItem from="1712354758780" duration="5791000" />
+      <workItem from="1712365236390" duration="7522000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -381,7 +378,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712364605054</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Added buildings images">
+      <option name="closed" value="true" />
+      <created>1712364953540</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1712364953540</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Minor code refractor">
+      <option name="closed" value="true" />
+      <created>1712366233893</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1712366233893</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,8 +416,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Deleted sukuna cycle" />
-    <MESSAGE value="Added specialz as the music" />
     <MESSAGE value="Renamed to main scene" />
     <MESSAGE value="Refractored code" />
     <MESSAGE value="Added a GameController" />
@@ -428,6 +439,8 @@
     <MESSAGE value="Made powerups" />
     <MESSAGE value="update" />
     <MESSAGE value="bru" />
-    <option name="LAST_COMMIT_MESSAGE" value="bru" />
+    <MESSAGE value="Added buildings images" />
+    <MESSAGE value="Minor code refractor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor code refractor" />
   </component>
 </project>
