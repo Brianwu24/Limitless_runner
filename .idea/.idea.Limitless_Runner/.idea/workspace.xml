@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Attempt to implement collisions with powerups">
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Fixed null object">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PowerUps/Circle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PowerUps/Circle.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PowerUps/PowerUpManger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PowerUps/PowerUpManger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,9 +34,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/PowerUpManger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -136,7 +140,7 @@
       <workItem from="1712189168474" duration="9988000" />
       <workItem from="1712280234347" duration="2467000" />
       <workItem from="1712350781636" duration="1146000" />
-      <workItem from="1712354758780" duration="2361000" />
+      <workItem from="1712354758780" duration="5348000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -346,7 +350,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712355449887</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Update">
+      <option name="closed" value="true" />
+      <created>1712357181803</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1712357181803</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Fixed null object">
+      <option name="closed" value="true" />
+      <created>1712357223734</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1712357223734</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,8 +388,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Update2 cuz I broke something" />
-    <MESSAGE value="Update 3 cuz I forgor sth" />
     <MESSAGE value="bru" />
     <MESSAGE value="Added image because git refused to commit an empty folder" />
     <MESSAGE value="update" />
@@ -393,6 +411,8 @@
     <MESSAGE value="Made sure that BackgroundController.cs is here" />
     <MESSAGE value="Added base powerup class" />
     <MESSAGE value="Attempt to implement collisions with powerups" />
-    <option name="LAST_COMMIT_MESSAGE" value="Attempt to implement collisions with powerups" />
+    <MESSAGE value="Update" />
+    <MESSAGE value="Fixed null object" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed null object" />
   </component>
 </project>

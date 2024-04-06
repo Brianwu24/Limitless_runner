@@ -24,22 +24,31 @@ public class Player : MonoBehaviour
     public GameObject powerManager;
     private PowerUpManger _powerManager;
 
-    private Collider _playerCollider;
+    // private BoxCollider2D _playerCollider;
     void Start()
     {
         _powerManager = powerManager.GetComponent<PowerUpManger>();
-        _playerCollider = GetComponent<Collider>();
+        // _playerCollider = GetComponent<Collider>();
     }
-    
-    private void GetPowerUp()
+    public void OnCollisionEnter2D(Collision2D other)
     {
-        //O(1) time complexity check
-        GameObject nearestPowerUp = _powerManager.GetClosestPowerUp();
-        // if (nearestPowerUp.Item2.tag)
-        // Debug.Log(nearestPowerUp.GetComponent<().tag);
-
-
+        Debug.Log(other.gameObject.name);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log(true);
+        }
     }
+
+    // private void GetPowerUp()
+    // {
+    //     //O(1) time complexity check
+    //     GameObject nearestPowerUp = _powerManager.GetClosestPowerUp();
+    //     // if (nearestPowerUp.Item2.tag)
+    //     Debug.Log(this._playerCollider.OnCol);
+    //     // Debug.Log(_playerCollider.);
+    //
+    //
+    // }
     // Ends here
     
     // Update is called once per frame
@@ -65,7 +74,8 @@ public class Player : MonoBehaviour
         }
         
         //Check for PowerUpCollision
-        GetPowerUp();
+        // GetPowerUp();
+        
 
 
 
