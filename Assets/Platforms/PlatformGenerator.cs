@@ -41,7 +41,7 @@ public class Platforms
         //Generating initial plats
         float prevPosition = -8.9f;
         
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < 15; i++)
         {
             int randomNum = this._rng.NextInt(0, this._refPlatforms.Count);
             
@@ -68,7 +68,7 @@ public class Platforms
         {
             platform.transform.position -= _updateInc;
 
-            if (platform.transform.position.x <= -8.9)
+            if (platform.transform.position.x <= -15)
             {
                 isDestroyPlatform = true;
             }                
