@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Update">
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Final commit, way to tired to continue, its literally a 1 man mission to complete this game. Took way too long, its literally 4 rn, im going to bed, don't look for me tmr, also I merged Alex's start menu, and added a way to change to the main scene, just start from the start screen and run it from there.">
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/GojoIdle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/GojoIdle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/GojoJumpIdle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/GojoJumpIdle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/JumpDown.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/JumpDown.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/JumpUp.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/JumpUp.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SceneSwitch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SceneSwitch.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/CommonBurstAotSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animation/AnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/AnimationController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animation/GojoJump.anim" beforeDir="false" />
@@ -19,7 +31,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/Animation/satoru_gojo_sprites_sheet_5.controller.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Gojo Running.anim" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Gojo Running.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Platforms/PlatformGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Platforms/PlatformGenerator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Platforms/Platforms.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Platforms/Platforms.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Start.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Start.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterDir="false" />
@@ -37,6 +48,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/sce.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/test.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/test.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +73,7 @@
     <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Animation/AnimationController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Animation/AnimationController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Animation/AnimationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Animation/AnimationController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Animation/Gojo_Sprite_walking-removebg-preview_0.controller" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Background/BackgroundController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Background/opacity.cs" root0="FORCE_HIGHLIGHTING" />
@@ -71,7 +84,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/PowerUpManger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/random.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -505,7 +517,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712464428105</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Final commit, way to tired to continue, its literally a 1 man mission to complete this game. Took way too long, its literally 4 rn, im going to bed, don't look for me tmr, also I merged Alex's start menu, and added a way to change to the main scene, just start from the start screen and run it from there.">
+      <option name="closed" value="true" />
+      <created>1712477656720</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1712477656720</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Updated background, and fixed character not in camera" />
     <MESSAGE value="Made Sky background" />
     <MESSAGE value="Changed class name to fit convention" />
     <MESSAGE value="Fixed error" />
@@ -552,6 +571,7 @@
     <MESSAGE value="Major Update, fixed platform generation, Fixed player physics" />
     <MESSAGE value="Fix" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Final commit, way to tired to continue, its literally a 1 man mission to complete this game. Took way too long, its literally 4 rn, im going to bed, don't look for me tmr, also I merged Alex's start menu, and added a way to change to the main scene, just start from the start screen and run it from there." />
+    <option name="LAST_COMMIT_MESSAGE" value="Final commit, way to tired to continue, its literally a 1 man mission to complete this game. Took way too long, its literally 4 rn, im going to bed, don't look for me tmr, also I merged Alex's start menu, and added a way to change to the main scene, just start from the start screen and run it from there." />
   </component>
 </project>
