@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -9,172 +6,128 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     public GameObject gameController;
     private GameController _gameController;
+    
+    private Rigidbody2D _rigidBody2d;
+    
+    private float _initialX;
+        
 
-    private float _gravity;
-    public float velocityY;         
-
-    public bool grounded;
-    public bool inAir;
+    public bool _grounded;
+    public bool _isFalling;
 
     public bool holdJump;
-    public float maxHoldJumpTime = 0.4f;
     public float jumpHoldTimer;
+    
 
-    public float jumpGrounddistance = 1; // so people can jump just before hitting the ground so it isn't clunky
-
-    private bool isDead = false;
+    private bool isDead;
     //Brian's code starts here
     public GameObject powerManager;
     private PowerUpManger _powerManager;
-
-    // private BoxCollider2D _playerCollider;
+    
     void Start()
     {
         _gameController = gameController.GetComponent<GameController>();
         _powerManager = powerManager.GetComponent<PowerUpManger>();
+        _rigidBody2d = GetComponent<Rigidbody2D>();
 
-        _gravity = _gameController.gravity;
+        _initialX = transform.position.x;
     }
     public void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Platform"))
-        {
-            grounded = true;
-        }
+
         if (other.gameObject.CompareTag("Enemy"))
         {
             isDead = true;
         }
     }
 
-    public void OnCollisionStay2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Platform"))
-        {
-            // Debug.Log("Grounded");
-            grounded = true;
-        }
-    }
-
-    public void OnCollisionExit2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Platform"))
-        {
-            // Debug.Log("Not grounded");
-            grounded = false;
-            inAir = true;
-        }
-    }
-
-    // private void GetPowerUp()
-    // {
-    //     //O(1) time complexity check
-    //     GameObject nearestPowerUp = _powerManager.GetClosestPowerUp();
-    //     // if (nearestPowerUp.Item2.tag)
-    //     Debug.Log(this._playerCollider.OnCol);
-    //     // Debug.Log(_playerCollider.);
-    //
-    //
-    // }
     // Ends here
     public bool GetJumping()
     {
-        return !grounded;
+        return !this._grounded;
+    }
+
+    public bool GetFalling()
+    {
+        return _isFalling;
     }
     
     // Update is called once per frame
     void Update()
     {
+        //Check if the player is in the abyss
+        if (this.transform.position.y <= -10)
+        {
+            isDead = true;
+        }
+        //If so then stop the game by setting speed to 0
         if (isDead)
         {
             _gameController.SetSpeed(0);
         }
+
+        if (transform.position.x < _initialX)
+        {
+            transform.Translate(Vector3.right * (Time.deltaTime * _gameController.GetSpeed()));
+        }
+        
+        // Activate Jump
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (grounded)
+            if (this._grounded)
             {
                 holdJump = true;
                 jumpHoldTimer = 0;
             }
         }
 
-        if (Input.GetKey(KeyCode.Space) && holdJump && grounded)
+        if (Input.GetKey(KeyCode.Space) && holdJump && this._grounded)
         {
             jumpHoldTimer += Time.deltaTime;
         }
-
-        if (Input.GetKeyUp(KeyCode.Space) && grounded)
+        
+        if (Input.GetKeyUp(KeyCode.Space) && this._grounded)
         {
             holdJump = false;
             if (jumpHoldTimer > 3)
             {
                 jumpHoldTimer = 3;
             }
-            velocityY = 10f + 5f * jumpHoldTimer;
-            transform.Translate(Vector3.up * 0.1f);
+
+            _rigidBody2d.AddForce(transform.up * (7 + 0.25f * jumpHoldTimer), ForceMode2D.Impulse);
         }
 
-        if (grounded && inAir)
+        if (_rigidBody2d.velocity.y < 0)
         {
-            inAir = false;
-            velocityY = 0;
+            this._isFalling = true;
         }
-        
-        //Check for PowerUpCollision
-        // GetPowerUp();
-        
     }
 
     private void FixedUpdate()
     {
-        // Vector2 position = transform.position;
-        // if (grounded)
-        // {
-        //     accelerationY = 0;
-        //     velocityY = 0;
-        //     
-        // }
-        // if (velocityY != 0)
-        // {
-        if (inAir)
+        Vector3 updatePos = new Vector3(0, -0.05f, 0);
+        RaycastHit2D hit =  Physics2D.Raycast(transform.position + updatePos, -Vector2.up);
+
+        if (hit.collider != null && hit.collider.CompareTag("Platform"))
         {
-            float translationY = 
-                (Time.deltaTime * velocityY) + (_gravity * MathF.Pow(Time.deltaTime, 2));
-            
-            transform.position += new Vector3(0, translationY, 0);
-
-
+            float distance = MathF.Abs(hit.point.y - transform.position.y);
+            if (distance - 0.075 <= 0)
+            {
+                _grounded = true;
+            }
+            else
+            {
+                _grounded = false;
+            }
         }
-            
-        // }
-    //
-    //     if (!grounded)
-    //     {
-    //
-    //         position.y += velocity.y * Time.fixedDeltaTime; // changing the player position every frame
-    //         if (!holdJump)
-    //         {
-    //             velocity.y += gravity * Time.fixedDeltaTime; // changing how much the y axis changes per frame
-    //         }
-    //
-    //         if (position.y <= groundHeight)
-    //         {
-    //             position.y = groundHeight;
-    //             grounded = true;
-    //         }
-    //
-    //         if (holdJump)
-    //         {
-    //             jumpTimer += Time.fixedDeltaTime;
-    //             if (jumpTimer >= maxHoldJumpTime)
-    //             {
-    //                 holdJump = false;
-    //             }
-    //         }
-    //     }
-    //
-    //
-        // transform.position = position;
+        else
+        {
+            _grounded = false;
+        }
     }
+
+
+
+
 
 }

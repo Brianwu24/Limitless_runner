@@ -147,7 +147,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 258853737}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 63c940d5950315b4f87cfbc11a7c6102, type: 3}
@@ -262,10 +262,10 @@ GameObject:
   - component: {fileID: 629207107}
   - component: {fileID: 629207106}
   - component: {fileID: 629207105}
-  - component: {fileID: 629207110}
   - component: {fileID: 629207109}
   - component: {fileID: 629207108}
   - component: {fileID: 629207111}
+  - component: {fileID: 629207112}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -335,12 +335,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -351857948, guid: a27ca218fcfc43f448caeddc222af9c8, type: 3}
+  m_Sprite: {fileID: 536500684, guid: 6dfcee2186b21e94fa9c7b6fde961422, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.29, y: 0.67}
+  m_Size: {x: 0.23, y: 0.68}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -355,7 +355,7 @@ Transform:
   m_GameObject: {fileID: 629207104}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.636, y: -2.007, z: 0}
+  m_LocalPosition: {x: -6.7, y: -1.7, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -374,13 +374,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 1149739404}
-  velocityY: 0
-  grounded: 0
-  inAir: 0
+  _grounded: 0
+  _isFalling: 1
   holdJump: 0
-  maxHoldJumpTime: 0.4
   jumpHoldTimer: 0
-  jumpGrounddistance: 1
   powerManager: {fileID: 1480699745}
 --- !u!61 &629207109
 BoxCollider2D:
@@ -414,20 +411,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.009766102, y: 0.33052868}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.29, y: 0.67}
-    newSize: {x: 0.29, y: 0.67}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.28, y: 0.65}
+    newSize: {x: 0.23, y: 0.68}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.29, y: 0.67}
+  m_Size: {x: 0.27008134, y: 0.6658695}
   m_EdgeRadius: 0
---- !u!50 &629207110
+--- !u!114 &629207111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629207104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ada5ade9101983e449bd6e9623edb6a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &629207112
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -454,18 +463,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &629207111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 629207104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ada5ade9101983e449bd6e9623edb6a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &776663784
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,7 +538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528e3796fdd413041853532de6078be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravity: -200
+  gravity: -9.8
 --- !u!4 &1149739406
 Transform:
   m_ObjectHideFlags: 0

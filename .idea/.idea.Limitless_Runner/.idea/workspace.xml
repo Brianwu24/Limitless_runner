@@ -4,11 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Fix">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-05_11_29_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-05_11_29_p_m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-05_11_31_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-05_11_31_p_m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-05_6_45_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-05_6_45_p_m___Changes_.xml" afterDir="false" />
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/AnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/AnimationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/GojoJump.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/GojoJump.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/GojoWalk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/GojoWalk.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gojo_Sprite_walking-removebg-preview_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gojo_Sprite_walking-removebg-preview_0.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/satoru_gojo_sprites_sheet_16.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/satoru_gojo_sprites_sheet_16.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/satoru_gojo_sprites_sheet_5 1.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/satoru_gojo_sprites_sheet_5 1.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/satoru_gojo_sprites_sheet_5.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/satoru_gojo_sprites_sheet_5.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gojo Running.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gojo Running.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Platforms/PlatformGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Platforms/PlatformGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Platforms/Platforms.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Platforms/Platforms.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Start.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Start.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Gojo_Sprite_walking-removebg-preview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Gojo_Sprite_walking-removebg-preview.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/satoru_gojo_sprites_sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/satoru_gojo_sprites_sheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/gojo Walk.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/gojo Walk.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/player 1.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/player 1.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/player.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/player.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/sce.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/sce.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/test.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/test.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,16 +58,19 @@
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/a2/a4a722fb/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/cd/8bcee734/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Animation/AnimationController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Animation/AnimationController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Animation/AnimationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Animation/Gojo_Sprite_walking-removebg-preview_0.controller" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Background/BackgroundController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Background/opacity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemy/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EnemySpawns.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Platforms/PlatformGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/PowerUpManger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/random.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -465,7 +497,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712464337595</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Update">
+      <option name="closed" value="true" />
+      <created>1712464428105</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1712464428105</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,12 +546,12 @@
     <MESSAGE value="Minor code refractor" />
     <MESSAGE value="Update, bug fix" />
     <MESSAGE value="Saved unity" />
-    <MESSAGE value="Update" />
     <MESSAGE value="Made PlatformGenerator.cs better" />
     <MESSAGE value="Unity Update" />
     <MESSAGE value="Added Enemies and the OP CIRCLE AND TRIANGLE" />
     <MESSAGE value="Major Update, fixed platform generation, Fixed player physics" />
     <MESSAGE value="Fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>

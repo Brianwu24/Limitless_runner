@@ -7,7 +7,9 @@ public class AnimationController : MonoBehaviour
     private Player _player;
     private Animator _anim;
 
+    //Rider specific optimization, not written by Brian
     private static readonly int IsJumping = Animator.StringToHash("isJumping");
+    private static readonly int IsFalling = Animator.StringToHash("isFalling");
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,15 @@ public class AnimationController : MonoBehaviour
         else
         {
             _anim.SetBool(IsJumping, false);
+        }
+
+        if (_player.GetFalling())
+        {
+            _anim.SetBool(IsFalling, true);
+        }
+        else
+        {
+            _anim.SetBool(IsFalling, false);
         }
     }
 }
