@@ -12,7 +12,7 @@ public class PowerUpManger : MonoBehaviour
     void Start()
     {
         _powerUps = new Queue<GameObject>();
-        GameObject powerup = Instantiate(circle, new Vector3(-2, 1, 0), Quaternion.identity, this.transform);
+        GameObject powerup = Instantiate(circle, new Vector3(-8.6f, 1, 0), Quaternion.identity, this.transform);
         _powerUps.Enqueue(powerup);
     }
 
