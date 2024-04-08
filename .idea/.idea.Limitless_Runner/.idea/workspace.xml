@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-04-07_12_27_a_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-04-07_12_27_a_m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-07_12_31_a_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-07_12_31_a_m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/AnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/AnimationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gojo_Sprite_walking-removebg-preview_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gojo_Sprite_walking-removebg-preview_0.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Background/BackgroundController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BackgroundController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Platforms/Platforms.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Platforms/Platforms.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Probably not the final update cuz I want to add power ups and attacks. Fixed background, and added score counter and made game more playable with smaller enemies and faster speed. Fixed weird gravity." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,10 +25,7 @@
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/6f7018b8b8c149e68c4a65a05ac289be175400/cd/8bcee734/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Animation/AnimationController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Animation/AnimationController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Animation/AnimationController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Animation/AnimationController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Animation/Gojo_Sprite_walking-removebg-preview_0.controller" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Background/BackgroundController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Background/opacity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemy/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
@@ -50,7 +35,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/PowerUpManger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/random.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -155,7 +139,7 @@
       <workItem from="1712354758780" duration="5791000" />
       <workItem from="1712365236390" duration="14169000" />
       <workItem from="1712423780414" duration="16558000" />
-      <workItem from="1712589072702" duration="4654000" />
+      <workItem from="1712589072702" duration="5139000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -501,7 +485,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712477899714</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Probably not the final update cuz I want to add power ups and attacks. Fixed background, and added score counter and made game more playable with smaller enemies and faster speed. Fixed weird gravity.">
+      <option name="closed" value="true" />
+      <created>1712595146315</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1712595146315</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,7 +515,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Changed class name to fit convention" />
     <MESSAGE value="Fixed error" />
     <MESSAGE value="Added building sprites" />
     <MESSAGE value="fix" />
@@ -548,6 +539,7 @@
     <MESSAGE value="Update" />
     <MESSAGE value="Final commit, way to tired to continue, its literally a 1 man mission to complete this game. Took way too long, its literally 4 rn, im going to bed, don't look for me tmr, also I merged Alex's start menu, and added a way to change to the main scene, just start from the start screen and run it from there." />
     <MESSAGE value="fricking removed the dumb circle, never adding one ever again, im gonna use a square next time for testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="fricking removed the dumb circle, never adding one ever again, im gonna use a square next time for testing" />
+    <MESSAGE value="Probably not the final update cuz I want to add power ups and attacks. Fixed background, and added score counter and made game more playable with smaller enemies and faster speed. Fixed weird gravity." />
+    <option name="LAST_COMMIT_MESSAGE" value="Probably not the final update cuz I want to add power ups and attacks. Fixed background, and added score counter and made game more playable with smaller enemies and faster speed. Fixed weird gravity." />
   </component>
 </project>
