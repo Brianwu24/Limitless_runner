@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Probably not the final update cuz I want to add power ups and attacks. Fixed background, and added score counter and made game more playable with smaller enemies and faster speed. Fixed weird gravity." />
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Renamed high score -&gt; score counter">
+      <change afterPath="$PROJECT_DIR$/Assets/PowerUps/InfiniteVoid.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PowerUps/InfiniteVoid.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/AnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/AnimationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gojo_Sprite_walking-removebg-preview_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gojo_Sprite_walking-removebg-preview_0.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Platforms/Platforms.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Platforms/Platforms.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PowerUps/Circle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PowerUps/Circle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PowerUps/PowerUpManger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PowerUps/PowerUpManger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Score.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Score.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,7 +153,7 @@
       <workItem from="1712354758780" duration="5791000" />
       <workItem from="1712365236390" duration="14169000" />
       <workItem from="1712423780414" duration="16558000" />
-      <workItem from="1712589072702" duration="5139000" />
+      <workItem from="1712589072702" duration="11733000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -493,7 +507,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712595146315</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Renamed high score -&gt; score counter">
+      <option name="closed" value="true" />
+      <created>1712595187661</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1712595187661</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,7 +537,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Fixed error" />
     <MESSAGE value="Added building sprites" />
     <MESSAGE value="fix" />
     <MESSAGE value="Init Commit because I screwed something up" />
@@ -540,6 +561,7 @@
     <MESSAGE value="Final commit, way to tired to continue, its literally a 1 man mission to complete this game. Took way too long, its literally 4 rn, im going to bed, don't look for me tmr, also I merged Alex's start menu, and added a way to change to the main scene, just start from the start screen and run it from there." />
     <MESSAGE value="fricking removed the dumb circle, never adding one ever again, im gonna use a square next time for testing" />
     <MESSAGE value="Probably not the final update cuz I want to add power ups and attacks. Fixed background, and added score counter and made game more playable with smaller enemies and faster speed. Fixed weird gravity." />
-    <option name="LAST_COMMIT_MESSAGE" value="Probably not the final update cuz I want to add power ups and attacks. Fixed background, and added score counter and made game more playable with smaller enemies and faster speed. Fixed weird gravity." />
+    <MESSAGE value="Renamed high score -&gt; score counter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed high score -&gt; score counter" />
   </component>
 </project>

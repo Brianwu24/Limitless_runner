@@ -3,21 +3,39 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class BasePowerUp
+namespace PowerUps
 {
-    private GameController _gameController;
-    private string _name;
-    private string _color;
-    private float _scoreIncrease;
-
-    public BasePowerUp(GameController gamecontroller, string color, string name, float score)
+    public class BasePowerUp
     {
-        _gameController = gamecontroller;
-        _name = name;
-        _color = color;
-        _scoreIncrease = score;
-    }
-    // Update is called once per frame
+        public GameController gameController;
+        public float powerUpTimeLimit;
+        public string powerUpName;
+        public float scoreIncrease;
 
+
+        public BasePowerUp(GameController gameController, string name, float scoreInc, float powerUpTimeLimit)
+        {
+            this.gameController = gameController;
+            this.powerUpName = name;
+            this.scoreIncrease = scoreInc;
+            this.powerUpTimeLimit = powerUpTimeLimit;
+        }
+        // Update is called once per frame
+
+        public string GetName()
+        {
+            return this.powerUpName;
+        }
+
+        public float GetTimeLimit()
+        {
+            return this.powerUpTimeLimit;
+        }
+        
+
+    }
 }
+
+
+
 

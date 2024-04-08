@@ -25,7 +25,7 @@ public class Score : MonoBehaviour
     {
         if (!_player.CheckIfDead())
         {
-            _scoreText.text = $"Score: {Mathf.RoundToInt(_gameController.GetTotalTime())}";
+            _scoreText.text = $"Score: {Mathf.RoundToInt(_gameController.GetScore())}";
         }
         
         

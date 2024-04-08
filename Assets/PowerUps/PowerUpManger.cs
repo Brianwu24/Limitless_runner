@@ -2,33 +2,39 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = Unity.Mathematics.Random;
 
+
+//Spawns Infinite voids once in a white
 public class PowerUpManger : MonoBehaviour
 {
-    public GameObject circle;
 
-    private Queue<GameObject> _powerUps;
+    public GameObject infiniteVoid;
+
+    private float _timePassed;
+    private Random _rng;
+
+    private float _timeTillNextPowerUp;
     // Start is called before the first frame update
+    
     void Start()
     {
-        _powerUps = new Queue<GameObject>();
-        GameObject powerup = Instantiate(circle, new Vector3(-8.6f, 1, 0), Quaternion.identity, this.transform);
-        _powerUps.Enqueue(powerup);
+        _rng = new Random((uint)UnityEngine.Random.Range(1, 100000));
+        _timeTillNextPowerUp = _rng.NextFloat(10, 30);
+        Instantiate(infiniteVoid, new Vector3(7f, 6, 0), Quaternion.identity, this.transform);
+        _timePassed = 0;
     }
-
-    public GameObject GetClosestPowerUp()
-    {
-        return _powerUps.Peek();
-    }
-
-    public void DestroyClosestPowerUp()
-    {
-        Destroy(_powerUps.Dequeue());
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
-        
+        if (_timePassed >= _timeTillNextPowerUp)
+        {
+            Instantiate(infiniteVoid, new Vector3(5f + _rng.NextFloat(-2f, 2f), 6, 0), Quaternion.identity, this.transform);
+            _timePassed = 0;
+            _timeTillNextPowerUp = _rng.NextFloat(10, 30);
+        }
+
+        _timePassed += Time.deltaTime;
     }
 }
