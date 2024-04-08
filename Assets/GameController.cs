@@ -6,7 +6,7 @@ public class GameController : MonoBehaviour
 {
     // Start is called before the first frame update
     private float _totalTime;
-    private float _speed = 1;
+    private float _speed = 3;
 
     public float gravity;
 
@@ -21,6 +21,11 @@ public class GameController : MonoBehaviour
         {
             this._speed = newSpeed;
         }
+    }
+
+    public float GetTotalTime()
+    {
+        return _totalTime;
     }
 
     // Update is called once per frame

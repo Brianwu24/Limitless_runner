@@ -49,12 +49,12 @@ public class Enemy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.Translate(Vector3.left * (1.25f * _gameController.GetSpeed() * Time.deltaTime));
+        transform.Translate(Vector3.left * (1.5f * _gameController.GetSpeed() * Time.deltaTime));
         // Move the enemy downwards
         if (_grounded)
         {
 
-            _velocityY = 5;
+            _velocityY = 2.5f;
             transform.Translate(Vector3.up * 0.05f);
             _grounded = false;
         

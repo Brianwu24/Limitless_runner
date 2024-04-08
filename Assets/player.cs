@@ -12,22 +12,24 @@ public class Player : MonoBehaviour
     private float _initialX;
         
 
-    public bool _grounded;
-    public bool _isFalling;
+    private bool _isGrounded;
+    private bool _isFalling;
 
-    public bool holdJump;
-    public float jumpHoldTimer;
+    private bool _isJumping;
+    
+    private bool _holdJump;
+    private float _jumpHoldTimer;
     
 
-    private bool isDead;
+    private bool _isDead;
     //Brian's code starts here
     public GameObject powerManager;
-    private PowerUpManger _powerManager;
+    // private PowerUpManger _powerManager;
     
     void Start()
     {
         _gameController = gameController.GetComponent<GameController>();
-        _powerManager = powerManager.GetComponent<PowerUpManger>();
+        // _powerManager = powerManager.GetComponent<PowerUpManger>();
         _rigidBody2d = GetComponent<Rigidbody2D>();
 
         _initialX = transform.position.x;
@@ -37,19 +39,28 @@ public class Player : MonoBehaviour
 
         if (other.gameObject.CompareTag("Enemy"))
         {
-            isDead = true;
+            _isDead = true;
         }
     }
 
+    public bool GetGrounded()
+    {
+        return _isGrounded;
+    }
     // Ends here
     public bool GetJumping()
     {
-        return !this._grounded;
+        return _isJumping;
     }
 
     public bool GetFalling()
     {
         return _isFalling;
+    }
+
+    public bool CheckIfDead()
+    {
+        return _isDead;
     }
     
     // Update is called once per frame
@@ -58,10 +69,10 @@ public class Player : MonoBehaviour
         //Check if the player is in the abyss
         if (this.transform.position.y <= -10)
         {
-            isDead = true;
+            _isDead = true;
         }
         //If so then stop the game by setting speed to 0
-        if (isDead)
+        if (_isDead)
         {
             _gameController.SetSpeed(0);
         }
@@ -74,27 +85,28 @@ public class Player : MonoBehaviour
         // Activate Jump
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (this._grounded)
+            if (this._isGrounded)
             {
-                holdJump = true;
-                jumpHoldTimer = 0;
+                _holdJump = true;
+                _jumpHoldTimer = 0;
             }
         }
 
-        if (Input.GetKey(KeyCode.Space) && holdJump && this._grounded)
+        if (Input.GetKey(KeyCode.Space) && _holdJump && this._isGrounded)
         {
-            jumpHoldTimer += Time.deltaTime;
+            _jumpHoldTimer += Time.deltaTime;
         }
         
-        if (Input.GetKeyUp(KeyCode.Space) && this._grounded)
+        if (Input.GetKeyUp(KeyCode.Space) && this._isGrounded)
         {
-            holdJump = false;
-            if (jumpHoldTimer > 3)
+            _holdJump = false;
+            if (_jumpHoldTimer > 3)
             {
-                jumpHoldTimer = 3;
+                _jumpHoldTimer = 3;
             }
 
-            _rigidBody2d.AddForce(transform.up * (7 + 0.25f * jumpHoldTimer), ForceMode2D.Impulse);
+            _rigidBody2d.AddForce(transform.up * (420 + 10f * _jumpHoldTimer), ForceMode2D.Impulse);
+            _isJumping = true;
         }
 
         if (_rigidBody2d.velocity.y < 0)
@@ -105,6 +117,7 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // Since box collider was stupid and didn't work as intended, ray cast was my only option
         Vector3 updatePos = new Vector3(0, -0.05f, 0);
         RaycastHit2D hit =  Physics2D.Raycast(transform.position + updatePos, -Vector2.up);
 
@@ -113,21 +126,17 @@ public class Player : MonoBehaviour
             float distance = MathF.Abs(hit.point.y - transform.position.y);
             if (distance - 0.075 <= 0)
             {
-                _grounded = true;
+                _isGrounded = true;
+                _isJumping = false;
             }
             else
             {
-                _grounded = false;
+                _isGrounded = false;
             }
         }
         else
         {
-            _grounded = false;
+            _isGrounded = false;
         }
     }
-
-
-
-
-
 }

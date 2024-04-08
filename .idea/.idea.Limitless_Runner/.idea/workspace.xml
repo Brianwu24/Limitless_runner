@@ -4,52 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Final commit, way to tired to continue, its literally a 1 man mission to complete this game. Took way too long, its literally 4 rn, im going to bed, don't look for me tmr, also I merged Alex's start menu, and added a way to change to the main scene, just start from the start screen and run it from there.">
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/GojoIdle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/GojoIdle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/GojoJumpIdle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/GojoJumpIdle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/JumpDown.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/JumpDown.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/JumpUp.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/JumpUp.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SceneSwitch.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SceneSwitch.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/CommonBurstAotSettings.json" afterDir="false" />
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-04-07_12_27_a_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-04-07_12_27_a_m___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-07_12_31_a_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-07_12_31_a_m___Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animation/AnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/AnimationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/GojoJump.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/GojoJump.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/GojoWalk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/GojoWalk.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animation/Gojo_Sprite_walking-removebg-preview_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gojo_Sprite_walking-removebg-preview_0.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/satoru_gojo_sprites_sheet_16.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/satoru_gojo_sprites_sheet_16.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/satoru_gojo_sprites_sheet_5 1.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/satoru_gojo_sprites_sheet_5 1.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/satoru_gojo_sprites_sheet_5.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/satoru_gojo_sprites_sheet_5.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gojo Running.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gojo Running.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background/BackgroundController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background/BackgroundController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Platforms/Platforms.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Platforms/Platforms.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Start.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Start.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Gojo_Sprite_walking-removebg-preview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Gojo_Sprite_walking-removebg-preview.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/satoru_gojo_sprites_sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/satoru_gojo_sprites_sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/gojo Walk.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/gojo Walk.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/player 1.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/player 1.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/player.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/player.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/sce.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/sce.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/test.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/test.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +50,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/PowerUpManger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/random.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -188,6 +155,7 @@
       <workItem from="1712354758780" duration="5791000" />
       <workItem from="1712365236390" duration="14169000" />
       <workItem from="1712423780414" duration="16558000" />
+      <workItem from="1712589072702" duration="4654000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -525,7 +493,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712477656720</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="fricking removed the dumb circle, never adding one ever again, im gonna use a square next time for testing">
+      <option name="closed" value="true" />
+      <created>1712477899714</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1712477899714</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,7 +523,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Made Sky background" />
     <MESSAGE value="Changed class name to fit convention" />
     <MESSAGE value="Fixed error" />
     <MESSAGE value="Added building sprites" />
@@ -572,6 +547,7 @@
     <MESSAGE value="Fix" />
     <MESSAGE value="Update" />
     <MESSAGE value="Final commit, way to tired to continue, its literally a 1 man mission to complete this game. Took way too long, its literally 4 rn, im going to bed, don't look for me tmr, also I merged Alex's start menu, and added a way to change to the main scene, just start from the start screen and run it from there." />
-    <option name="LAST_COMMIT_MESSAGE" value="Final commit, way to tired to continue, its literally a 1 man mission to complete this game. Took way too long, its literally 4 rn, im going to bed, don't look for me tmr, also I merged Alex's start menu, and added a way to change to the main scene, just start from the start screen and run it from there." />
+    <MESSAGE value="fricking removed the dumb circle, never adding one ever again, im gonna use a square next time for testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="fricking removed the dumb circle, never adding one ever again, im gonna use a square next time for testing" />
   </component>
 </project>

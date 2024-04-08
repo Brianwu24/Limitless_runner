@@ -47,9 +47,9 @@ public class Sky
         {
             this._backgroundsMain[i].transform.position -= this._updateIncBack;
             
-            if (this._backgroundsMain[i].transform.position.x <= -2 * 8.85)
+            if (this._backgroundsMain[i].transform.position.x <= -2 * 8.9)
             {
-                Vector3 resetPos = new Vector3(33.2f - this._rng.NextFloat(0, 2.4f), 0, this._backgroundsMain[i].transform.position.z);
+                Vector3 resetPos = new Vector3(4 * 8.925f, 0, this._backgroundsMain[i].transform.position.z);
                 this._backgroundsMain[i].transform.position = resetPos;
             }
             
@@ -61,9 +61,9 @@ public class Sky
             }
             
             this._clouds[i].transform.position -= this._updateIncCloud; 
-            if (this._clouds[i].transform.position.x <= -2 * 8.85)
+            if (this._clouds[i].transform.position.x <= -2 * 8.9)
             {
-                Vector3 resetPos = new Vector3(33.2f - this._rng.NextFloat(0, 2.4f), 0, this._clouds[i].transform.position.z);
+                Vector3 resetPos = new Vector3(4 * 8.925f - this._rng.NextFloat(0, 2.4f), 0, this._clouds[i].transform.position.z);
                 this._clouds[i].transform.position = resetPos;
             }
         }
@@ -212,15 +212,15 @@ public class BackgroundController : MonoBehaviour
         
         for (int i = 0; i < 3; i++)
         {
+            backgroundsMain.Add(Instantiate(backgroundMain, new Vector3(2 * i * 8.925f, 0, 10), Quaternion.identity, this.transform));
+            backgroundsOpac.Add(Instantiate(backgroundOpac, new Vector3(2 * i * 8.925f, 0, 8), Quaternion.identity, this.transform));
+            
             float randomStart = _rng.NextFloat(0, 2.4f);
             if (i == 0)
             {
                 randomStart = 0;
             }
-            
-            backgroundsMain.Add(Instantiate(backgroundMain, new Vector3(2 * i * 8.9f - randomStart, 0, 10), Quaternion.identity, this.transform));
-            backgroundsOpac.Add(Instantiate(backgroundOpac, new Vector3(2 * i * 8.925f, 0, 8), Quaternion.identity, this.transform));
-            clouds.Add(Instantiate(cloud,new Vector3(2 * i * 8.9f - randomStart, 0, 9), Quaternion.identity, this.transform));
+            clouds.Add(Instantiate(cloud,new Vector3(2 * i * 8.925f - randomStart, 0, 9), Quaternion.identity, this.transform));
         }
         
         this._sky = new Sky(gameController: _gameController,
@@ -230,11 +230,11 @@ public class BackgroundController : MonoBehaviour
 
         instantiatedBuildings = new List<Buildings>();
         Transform parentTransform = this.transform;
-        instantiatedBuildings.Add(new Buildings(1f, 7, 0.25f, _gameController, parentTransform, buildingPrefab1.transform));
-        instantiatedBuildings.Add(new Buildings(0.8f, 6, 0.35f, _gameController, parentTransform, buildingPrefab2.transform));
-        instantiatedBuildings.Add(new Buildings(0.7f, 5, 0.45f, _gameController, parentTransform, buildingPrefab3.transform));
-        instantiatedBuildings.Add(new Buildings(0.675f, 4, 0.55f, _gameController, parentTransform, buildingPrefab4.transform));
-        instantiatedBuildings.Add(new Buildings(0.5f, 3, 0.75f, _gameController, parentTransform, buildingPrefab5.transform));
+        instantiatedBuildings.Add(new Buildings(0.8f, 7, 0.25f, _gameController, parentTransform, buildingPrefab1.transform));
+        instantiatedBuildings.Add(new Buildings(0.7f, 6, 0.35f, _gameController, parentTransform, buildingPrefab2.transform));
+        instantiatedBuildings.Add(new Buildings(0.65f, 5, 0.45f, _gameController, parentTransform, buildingPrefab3.transform));
+        instantiatedBuildings.Add(new Buildings(0.55f, 4, 0.55f, _gameController, parentTransform, buildingPrefab4.transform));
+        instantiatedBuildings.Add(new Buildings(0.35f, 3, 0.75f, _gameController, parentTransform, buildingPrefab5.transform));
         
     }
 
