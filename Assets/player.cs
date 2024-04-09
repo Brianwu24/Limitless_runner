@@ -22,9 +22,6 @@ public class Player : MonoBehaviour
     
 
     private bool _isDead;
-    //Brian's code starts here
-    public GameObject powerManager;
-    // private PowerUpManger _powerManager;
     
     void Start()
     {
@@ -105,7 +102,7 @@ public class Player : MonoBehaviour
                 _jumpHoldTimer = 3;
             }
 
-            _rigidBody2d.AddForce(transform.up * (420 + 10f * _jumpHoldTimer), ForceMode2D.Impulse);
+            _rigidBody2d.AddForce(transform.up * (420 + 20f * _jumpHoldTimer), ForceMode2D.Impulse);
             _isJumping = true;
         }
 

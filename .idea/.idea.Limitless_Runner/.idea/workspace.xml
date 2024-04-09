@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Added infiniteVoid.cs for slowing down the game to a really slow speed, and sped up animation when gamecontroller's speed increases">
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Code refractor">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Platforms/PlatformGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Platforms/PlatformGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PowerUps/InfiniteVoid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PowerUps/InfiniteVoid.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Platforms/PlatformGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/PowerUps/InfiniteVoid.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PowerUps/PowerUpManger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Scenes/main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/random.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -144,7 +147,7 @@
       <workItem from="1712354758780" duration="5791000" />
       <workItem from="1712365236390" duration="14169000" />
       <workItem from="1712423780414" duration="16558000" />
-      <workItem from="1712589072702" duration="15596000" />
+      <workItem from="1712589072702" duration="15696000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -514,7 +517,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712608582051</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Code refractor">
+      <option name="closed" value="true" />
+      <created>1712633606755</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1712633606755</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fix" />
     <MESSAGE value="Init Commit because I screwed something up" />
     <MESSAGE value="Final Update for fix" />
     <MESSAGE value="Made sure that BackgroundController.cs is here" />
@@ -561,6 +571,7 @@
     <MESSAGE value="Probably not the final update cuz I want to add power ups and attacks. Fixed background, and added score counter and made game more playable with smaller enemies and faster speed. Fixed weird gravity." />
     <MESSAGE value="Renamed high score -&gt; score counter" />
     <MESSAGE value="Added infiniteVoid.cs for slowing down the game to a really slow speed, and sped up animation when gamecontroller's speed increases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added infiniteVoid.cs for slowing down the game to a really slow speed, and sped up animation when gamecontroller's speed increases" />
+    <MESSAGE value="Code refractor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code refractor" />
   </component>
 </project>
