@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Renamed high score -&gt; score counter">
-      <change afterPath="$PROJECT_DIR$/Assets/PowerUps/InfiniteVoid.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PowerUps/InfiniteVoid.cs.meta" afterDir="false" />
+    <list default="true" id="af802463-7ed8-4e98-8615-c744a2ce38e3" name="Changes" comment="Added infiniteVoid.cs for slowing down the game to a really slow speed, and sped up animation when gamecontroller's speed increases">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Limitless_Runner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/AnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/AnimationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Gojo_Sprite_walking-removebg-preview_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Gojo_Sprite_walking-removebg-preview_0.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Platforms/Platforms.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Platforms/Platforms.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PowerUps/BasePowerUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PowerUps/Circle.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PowerUps/Circle.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PowerUps/PowerUpManger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PowerUps/PowerUpManger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Score.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Score.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Platforms/PlatformGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Platforms/PlatformGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PowerUps/InfiniteVoid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PowerUps/InfiniteVoid.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +30,7 @@
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Animation/AnimationController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Animation/AnimationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/TryHarder/Desktop/Unityprojects/Limitless_Runner/Assets/Animation/AnimationController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Background/BackgroundController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Background/opacity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemy/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
@@ -153,7 +144,7 @@
       <workItem from="1712354758780" duration="5791000" />
       <workItem from="1712365236390" duration="14169000" />
       <workItem from="1712423780414" duration="16558000" />
-      <workItem from="1712589072702" duration="11733000" />
+      <workItem from="1712589072702" duration="15596000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -515,7 +506,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712595187661</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Added infiniteVoid.cs for slowing down the game to a really slow speed, and sped up animation when gamecontroller's speed increases">
+      <option name="closed" value="true" />
+      <created>1712608582051</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1712608582051</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,7 +536,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added building sprites" />
     <MESSAGE value="fix" />
     <MESSAGE value="Init Commit because I screwed something up" />
     <MESSAGE value="Final Update for fix" />
@@ -562,6 +560,7 @@
     <MESSAGE value="fricking removed the dumb circle, never adding one ever again, im gonna use a square next time for testing" />
     <MESSAGE value="Probably not the final update cuz I want to add power ups and attacks. Fixed background, and added score counter and made game more playable with smaller enemies and faster speed. Fixed weird gravity." />
     <MESSAGE value="Renamed high score -&gt; score counter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed high score -&gt; score counter" />
+    <MESSAGE value="Added infiniteVoid.cs for slowing down the game to a really slow speed, and sped up animation when gamecontroller's speed increases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added infiniteVoid.cs for slowing down the game to a really slow speed, and sped up animation when gamecontroller's speed increases" />
   </component>
 </project>
